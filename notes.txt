@@ -1,0 +1,5 @@
+
+1. Avatar profile picture
+	a. Avatar about picture?
+
+2. Pushing to GitHub
