@@ -521,9 +521,6 @@ textarea {
   }
 }
 
-@media all and (min-width: 1350px) {
-}
-
 @media all and (min-width: 1900px) {
   html {
     font-size: 22px;

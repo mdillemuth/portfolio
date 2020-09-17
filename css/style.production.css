@@ -5,8 +5,6 @@
 * Browsers: last 4 version
 */
 
-/* Variables */
-
 /* Style Reset */
 * {
   -webkit-box-sizing: border-box;
@@ -649,9 +647,6 @@ textarea {
     width: 10em;
     border-radius: 5px;
   }
-}
-
-@media all and (min-width: 1350px) {
 }
 
 @media all and (min-width: 1900px) {
