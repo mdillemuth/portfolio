@@ -254,6 +254,7 @@ textarea {
 }
 
 /* Homepage Styling */
+
 .main__home {
   display: flex;
   flex-direction: column;
@@ -458,6 +459,9 @@ textarea {
   .header__nav--list li:last-of-type {
     margin-right: 0;
   }
+  .home__container {
+    margin-top: 50px;
+  }
   .home__btn--container {
     display: flex;
     justify-content: center;
@@ -516,10 +520,12 @@ textarea {
   .home__container {
     max-width: 900px;
     grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 300px;
     justify-items: center;
     align-items: center;
     gap: 1em;
     margin: 1.5em auto;
+    padding-bottom: 0;
   }
   .btn__home {
     margin: 0 0.5em;
@@ -577,12 +583,21 @@ textarea {
   }
 }
 
+@media all and (min-width: 1400px) {
+  .home__container {
+    grid-template-rows: 400px;
+  }
+}
+
 @media all and (min-width: 1900px) {
   html {
     font-size: 22px;
   }
   .header__container {
     max-width: 1800px;
+  }
+  .home__container {
+    grid-template-rows: 450px;
   }
   .work__container,
   .contact__container,
@@ -593,6 +608,6 @@ textarea {
     margin-top: 100px;
   }
   .btn__home {
-    max-width: 250px;
+    max-width: 220px;
   }
 }
