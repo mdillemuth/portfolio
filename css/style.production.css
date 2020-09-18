@@ -5,13 +5,15 @@
 * Browsers: last 4 version
 */
 
+/* Variables */
+
 /* Style Reset */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 body {
-  background-color: #2f303a;
+  background-color: #fafafa;
   position: relative;
   margin: 0;
   padding: 0;
@@ -46,32 +48,35 @@ html {
 .heading {
   font-size: 1.3em;
   font-family: "Poppins", sans-serif;
-  color: #eeeeee;
+  color: #4d4f62;
   letter-spacing: 0.1em;
   word-spacing: 0.1em;
   font-weight: bold;
 }
 .heading__accent {
   font-size: 1.5em;
-  color: #bc3a80;
+  color: #ea5454;
 }
 .subheading {
   font-size: 1.1em;
   font-family: "Poppins", sans-serif;
-  color: #eeeeee;
+  color: #4d4f62;
 }
 .subheading__accent {
   font-size: 1.3em;
-  color: #1762a7;
+  color: #549ef2;
+}
+.home__subheading {
+  opacity: .5;
 }
 .header__nav--link {
   font-size: 1em;
   font-family: "Poppins", sans-serif;
-  color: #eeeeee;
+  color: #4d4f62;
 }
 input {
   font-family: "Open sans", sans-serif;
-  color: #202027;
+  color: #ffffff;
   font-size: 0.8em;
 }
 textarea {
@@ -80,7 +85,7 @@ textarea {
 }
 .contact__label {
   font-family: "Poppins", sans-serif;
-  color: #eeeeee;
+  color: #4d4f62;
   font-size: 0.9em;
 }
 
@@ -89,7 +94,8 @@ textarea {
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.25px;
   font-size: 1em;
-
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.07);
   display: block;
   border-radius: 5px;
   outline: none;
@@ -104,19 +110,19 @@ textarea {
   background: rgb(23, 98, 167);
   background: -o-linear-gradient(
     45deg,
-    rgba(23, 98, 167, 1) 40%,
-    rgba(188, 58, 128, 1) 100%
+    rgba(234, 84, 84, 1) 0%,
+    rgba(84, 158, 242, 1) 100%
   );
   background: linear-gradient(
     45deg,
-    rgba(23, 98, 167, 1) 40%,
-    rgba(188, 58, 128, 1) 100%
+    rgba(234, 84, 84, 1) 0%,
+    rgba(84, 158, 242, 1) 100%
   );
-  color: #eeeeee;
+  color: #ffffff;
 }
 .btn__secondary {
-  border: 2px solid #1762a7;
-  color: #eeeeee;
+  border: 2px solid #549ef2;
+  color: #549ef2;
   padding: calc(0.75em - 2px) calc(1.5em - 2px);
 }
 .btn:hover,
@@ -205,18 +211,18 @@ textarea {
   transition: 250ms;
 }
 .header__nav--link:visited {
-  color: #1762a7;
+  color: #549ef2;
 }
 .header__nav--link:focus {
-  color: #bc3a80;
+  color: #ea5454;
 }
 .header__nav--link:hover {
-  color: #bc3a80;
+  color: #ea5454;
 }
 
 /* Footer Styling */
 .footer__container {
-  background-color: #202027;
+  background-color: #fafafa;
   position: absolute;
   bottom: 0px;
   width: 100%;
@@ -244,10 +250,20 @@ textarea {
       -ms-transform: scale(1.125);
           transform: scale(1.125);
 }
+.footer__text {
+  font-family: "Open sans", sans-serif;
+  font-size: .75em;
+  color: #4d4f62;
+  opacity: .75;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1em auto;
+  text-align: center;
+}
 
 /* Homepage Styling */
 .main__home {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -300,6 +316,7 @@ textarea {
   max-width: 350px;
 }
 
+
 /* Work Styling */
 
 .work__heading {
@@ -320,27 +337,31 @@ textarea {
   max-width: 450px;
 }
 .work__item {
-  background-color: #202027;
+  background-color: #ffffff;
   border-radius: 7px;
-  -webkit-box-shadow: 3px 3px 0.5px 0.5px rgba(0, 0, 0, 0.1);
-          box-shadow: 3px 3px 0.5px 0.5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.12);
   padding: 1.5em 2.5em;
 }
 .work__item--heading {
   font-family: "Poppins", sans-serif;
   font-size: 1.1em;
-  color: #1762a7;
+  color: #549ef2;
   text-align: center;
   margin-bottom: 1em;
 }
 .work__item--heading--accent {
-  color: #bc3a80;
+  color: #ea5454;
 }
 .work__item--text {
   font-family: "Open sans", sans-serif;
   font-size: 0.85em;
-  color: #eeeeee;
+  color: #4d4f62;
   margin-bottom: 1.5em;
+  opacity: .5;
+}
+.work__item--text--accent {
+  opacity: 1;
 }
 .work__item--img--container {
   display: none;
@@ -348,7 +369,7 @@ textarea {
 .btn__work {
   text-align: center;
   font-size: 0.85em;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 .btn__work.btn__work--accent {
   text-align: center;
@@ -370,24 +391,24 @@ textarea {
   justify-items: center;
 }
 .about__heading {
-  margin-bottom: 1em;
+  font-size: 1.1em;
 }
 .about__subheading {
   text-align: center;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 .about__container--content {
-  padding: 1.5em 2.5em;
+  padding: 0.75em 2.5em;
   max-width: 700px;
 }
 .about__container--content p:first-of-type {
-  margin-bottom: 1.5em;
+  margin-bottom: 0.5em;
 }
 .about__img {
-  margin-bottom: 7em;
+  margin-bottom: 5em;
 }
 .about__svg {
-  width: 14em;
+  width: 12em;
 }
 .svg__trees {
   fill: rgb(32, 150, 48);
@@ -413,7 +434,9 @@ textarea {
 .contact__form {
   padding: 1.5em 2em;
   border-radius: 7px;
-  background-color: #202027;
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.12);
+  background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -429,12 +452,22 @@ textarea {
   margin-bottom: 0.5em;
 }
 .contact__input {
+  background-color: #fafafa;
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.contact__textarea {
+  background-color: #fafafa;
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.contact__input {
   display: inline-block;
   border-radius: 7px;
   width: 100%;
   margin-bottom: 1em;
-  padding: 0.5em 1em;
-  border: 2.5px solid #202027;
+  padding: 0.75em 1.5em;
+  border: 2.5px solid #fafafa;
   outline: none;
   -webkit-transition: all 300ms;
   -o-transition: all 300ms;
@@ -447,9 +480,7 @@ textarea {
   border: none;
 }
 .contact__input:focus {
-  border-color: #1762a7;
-  -webkit-box-shadow: 0 0 1px #1762a7;
-          box-shadow: 0 0 1px #1762a7;
+  border-color: #549ef2;
 }
 .contact__textarea {
   min-height: 100px;
@@ -535,7 +566,7 @@ textarea {
     right: 20px;
     max-width: 300px;
   }
-  .btn__work.btn__work--accent {
+  .btn__work {
     margin: 0 auto;
   }
   .work__item--content--accent {
@@ -627,9 +658,6 @@ textarea {
     height: 100%;
     padding: 1.5em 2em;
   }
-  .btn__work {
-    max-width: 200px;
-  }
   .btn__work--accent {
     bottom: 30px;
   }
@@ -644,7 +672,7 @@ textarea {
     margin-bottom: 2em;
   }
   .work__item--img--accent {
-    width: 10em;
+    width: 12em;
     border-radius: 5px;
   }
 }
