@@ -428,6 +428,7 @@ textarea {
 }
 .contact__input:focus {
   border-color: var(--primary-color);
+  color: var(--primary-color);
 }
 .contact__textarea {
   min-height: 100px;
