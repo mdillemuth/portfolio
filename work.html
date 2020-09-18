@@ -25,16 +25,13 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.production.css" />
+    <link rel="stylesheet" href="css/style.production.css">
     <title>Matt Dillemuth | Work</title>
   </head>
   <body>
     <header class="header__container">
       <a href="index.html" class="header__logo--container"
-        ><img
-          src="img/md-logo.svg"
-          class="header__logo"
-          alt="square logo with white letters m d on blue background"
+        ><img src="img/md-logo.svg" class="header__logo" alt="name logo"
       /></a>
       <nav class="header__nav--container">
         <ul role="menubar" class="header__nav--list">
@@ -50,7 +47,7 @@
           </li>
           <li role="presentation">
             <a href="about.html" role="menuitem" class="header__nav--link"
-              >About</a
+              >About Me</a
             >
           </li>
           <li role="presentation">
@@ -138,7 +135,8 @@
     <footer class="footer__container">
       <p class="footer__text">Where you can find me</p>
       <ul role="menubar" class="footer__list">
-        <li role="presentation">
+        <li role="presentation" class="tooltip">
+          <span class="tooltip tooltiptext">GitHub</span>
           <a
             role="menuitem"
             href="https://github.com/mdillemuth"
@@ -149,7 +147,8 @@
               alt="GitHub logo"
           /></a>
         </li>
-        <li role="presentation">
+        <li role="presentation" class="tooltip">
+          <span class="tooltip tooltiptext">Gmail</span>
           <a role="menuitem" href="mailto:mattdillemuth@gmail.com"
             ><img
               class="footer__list--link"
@@ -157,15 +156,8 @@
               alt="gmail logo"
           /></a>
         </li>
-        <li role="presentation">
-          <a role="menuitem" href="#"
-            ><img
-              class="footer__list--link"
-              src="img/icons/slack.svg"
-              alt="Slack logo"
-          /></a>
-        </li>
-        <li role="presentation">
+        <li role="presentation" class="tooltip">
+          <span class="tooltip tooltiptext">LinkedIn</span>
           <a
             role="menuitem"
             href="https://www.linkedin.com/in/mdillemuth/"
@@ -178,6 +170,6 @@
         </li>
       </ul>
     </footer>
-    <!-- <script src="js/tota11y.min.js"></script> -->
+    <script src="js/tota11y.min.js"></script>
   </body>
 </html>

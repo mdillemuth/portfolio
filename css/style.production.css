@@ -46,37 +46,34 @@ html {
   font-weight: normal;
 }
 .heading {
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-family: "Poppins", sans-serif;
-  color: #4d4f62;
+  color: hsl(0, 0%, 29%);
   letter-spacing: 0.1em;
   word-spacing: 0.1em;
   font-weight: bold;
 }
 .heading__accent {
   font-size: 1.5em;
-  color: #ea5454;
+  color: #6739a7;
 }
 .subheading {
-  font-size: 1.1em;
+  font-size: 1em;
   font-family: "Poppins", sans-serif;
-  color: #4d4f62;
+  color: hsl(0, 0%, 39%);
 }
 .subheading__accent {
   font-size: 1.3em;
-  color: #549ef2;
-}
-.home__subheading {
-  opacity: .5;
+  color: #6739a7;
 }
 .header__nav--link {
-  font-size: 1em;
+  font-size: 0.8em;
   font-family: "Poppins", sans-serif;
-  color: #4d4f62;
+  color: hsl(0, 0%, 29%);
 }
 input {
   font-family: "Open sans", sans-serif;
-  color: #ffffff;
+  color: undefined;
   font-size: 0.8em;
 }
 textarea {
@@ -85,51 +82,51 @@ textarea {
 }
 .contact__label {
   font-family: "Poppins", sans-serif;
-  color: #4d4f62;
-  font-size: 0.9em;
+  color: hsl(0, 0%, 29%);
+  font-size: 0.8em;
 }
 
 /* Button Styling */
 .btn {
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.25px;
-  font-size: 1em;
-  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.07);
-          box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.07);
+  font-size: 0.85em;
   display: block;
   border-radius: 5px;
   outline: none;
   cursor: pointer;
-  padding: 0.75em 1.5em;
+  padding: 0.5em 1em;
   -webkit-transition: all 400ms;
   -o-transition: all 400ms;
   transition: all 400ms;
   width: 100%;
 }
 .btn__primary {
-  background: rgb(23, 98, 167);
-  background: -o-linear-gradient(
-    45deg,
-    rgba(234, 84, 84, 1) 0%,
-    rgba(84, 158, 242, 1) 100%
-  );
-  background: linear-gradient(
-    45deg,
-    rgba(234, 84, 84, 1) 0%,
-    rgba(84, 158, 242, 1) 100%
-  );
-  color: #ffffff;
+  background-color: #6739a7;
+  color: white;
 }
 .btn__secondary {
-  border: 2px solid #549ef2;
-  color: #549ef2;
-  padding: calc(0.75em - 2px) calc(1.5em - 2px);
+  border: 2px solid #6739a7;
+  color: #6739a7;
+  padding: calc(0.5em - 2px) calc(1em - 2px);
 }
 .btn:hover,
 .btn:focus {
   -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
           transform: scale(1.05);
+}
+.btn__primary:hover {
+  background-color: hsl(265, 49%, 34%);
+}
+.btn__primary:focus {
+  background-color: hsl(265, 49%, 34%);
+}
+.btn__secondary:hover {
+  color: hsl(265, 49%, 34%);
+}
+.btn__secondary:focus {
+  color: hsl(265, 49%, 34%);
 }
 
 /* General Styling */
@@ -194,7 +191,7 @@ textarea {
   text-align: left;
 }
 .header__logo {
-  width: 4em;
+  width: 3em;
   -webkit-transition: 250ms;
   -o-transition: 250ms;
   transition: 250ms;
@@ -206,18 +203,24 @@ textarea {
           transform: scale(1.1);
 }
 .header__nav--link {
+  padding-left: 0.5em;
+  border-left: 3px solid transparent;
   -webkit-transition: 250ms;
   -o-transition: 250ms;
   transition: 250ms;
 }
 .header__nav--link:visited {
-  color: #549ef2;
+  color: hsl(0, 0%, 29%);
 }
 .header__nav--link:focus {
-  color: #ea5454;
+  color: #6739a7;
+  border-left-color: #6739a7;
+  font-weight: bold;
 }
 .header__nav--link:hover {
-  color: #ea5454;
+  color: #6739a7;
+  border-left-color: #6739a7;
+  font-weight: bold;
 }
 
 /* Footer Styling */
@@ -252,14 +255,58 @@ textarea {
 }
 .footer__text {
   font-family: "Open sans", sans-serif;
-  font-size: .75em;
+  font-size: 0.75em;
   color: #4d4f62;
-  opacity: .75;
+  opacity: 0.85;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 1em auto;
+  margin: 1.5em auto;
   text-align: center;
+}
+
+/* Tooltip  */
+.tooltip {
+  position: relative;
+}
+.tooltip .tooltiptext {
+  opacity: 0;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-delay: 0.25s;
+       -o-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+  -webkit-transition-duration: 0.75s;
+       -o-transition-duration: 0.75s;
+          transition-duration: 0.75s;
+  visibility: hidden;
+  background-color: #6739a7;
+  color: #fafafa;
+  text-align: center;
+  font-size: 0.6em;
+  font-family: "Open sans", sans-serif;
+  padding: 2.5px;
+  border-radius: 6px;
+  position: absolute;
+  width: 60px;
+  bottom: 55px;
+  right: -9px;
+  z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #6739a7 transparent transparent transparent;
 }
 
 /* Homepage Styling */
@@ -274,8 +321,11 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 .home__container {
+  margin: 0 auto;
   width: 100%;
   max-width: 900px;
   display: -ms-grid;
@@ -316,7 +366,6 @@ textarea {
   max-width: 350px;
 }
 
-
 /* Work Styling */
 
 .work__heading {
@@ -346,22 +395,22 @@ textarea {
 .work__item--heading {
   font-family: "Poppins", sans-serif;
   font-size: 1.1em;
-  color: #549ef2;
+  color: #6739a7;
   text-align: center;
   margin-bottom: 1em;
 }
 .work__item--heading--accent {
-  color: #ea5454;
+  color: #6739a7;
+  font-size: 1.25em;
 }
 .work__item--text {
   font-family: "Open sans", sans-serif;
   font-size: 0.85em;
-  color: #4d4f62;
+  color: hsl(0, 0%, 39%);
   margin-bottom: 1.5em;
-  opacity: .5;
 }
 .work__item--text--accent {
-  opacity: 1;
+  color: hsl(0, 0%, 29%);
 }
 .work__item--img--container {
   display: none;
@@ -405,7 +454,7 @@ textarea {
   margin-bottom: 0.5em;
 }
 .about__img {
-  margin-bottom: 7em;
+  margin-bottom: 7.5em;
 }
 .about__svg {
   width: 12em;
@@ -480,7 +529,7 @@ textarea {
   border: none;
 }
 .contact__input:focus {
-  border-color: #549ef2;
+  border-color: #6739a7;
 }
 .contact__textarea {
   min-height: 100px;
@@ -591,7 +640,7 @@ textarea {
     font-size: 20px;
   }
   .home__container {
-    max-width: 1100px;
+    max-width: 900px;
     -ms-grid-columns: 1fr 1em 1.5fr;
     grid-template-columns: 1fr 1.5fr;
     justify-items: center;
@@ -599,7 +648,7 @@ textarea {
         -ms-flex-align: center;
             align-items: center;
     gap: 1em;
-    margin: 0.5em auto;
+    margin: 1.5em auto;
   }
   .btn__home {
     margin: 0 0.5em;

@@ -1,10 +1,10 @@
 /* Variables */
 :root {
-  --primary-color: #549ef2;
-  --secondary-color: #ffffff;
   --background-color: #fafafa;
-  --accent-color: #ea5454;
-  --light-color: #4d4f62;
+  --primary-color: #6739a7;
+  --primary-color-darker: hsl(265, 49%, 34%);
+  --text-color: hsl(0, 0%, 29%);
+  --text-color-lighter: hsl(0, 0%, 39%);
   --primary-font: "Poppins", sans-serif;
   --secondary-font: "Open sans", sans-serif;
 }
@@ -47,33 +47,30 @@ html {
   font-weight: normal;
 }
 .heading {
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-family: var(--primary-font);
-  color: var(--light-color);
+  color: var(--text-color);
   letter-spacing: 0.1em;
   word-spacing: 0.1em;
   font-weight: bold;
 }
 .heading__accent {
   font-size: 1.5em;
-  color: var(--accent-color);
+  color: var(--primary-color);
 }
 .subheading {
-  font-size: 1.1em;
+  font-size: 1em;
   font-family: var(--primary-font);
-  color: var(--light-color);
+  color: var(--text-color-lighter);
 }
 .subheading__accent {
   font-size: 1.3em;
   color: var(--primary-color);
 }
-.home__subheading {
-  opacity: .5;
-}
 .header__nav--link {
-  font-size: 1em;
+  font-size: 0.8em;
   font-family: var(--primary-font);
-  color: var(--light-color);
+  color: var(--text-color);
 }
 input {
   font-family: var(--secondary-font);
@@ -86,41 +83,43 @@ textarea {
 }
 .contact__label {
   font-family: var(--primary-font);
-  color: var(--light-color);
-  font-size: 0.9em;
+  color: var(--text-color);
+  font-size: 0.8em;
 }
 
 /* Button Styling */
 .btn {
   font-family: var(--primary-font);
   letter-spacing: 0.25px;
-  font-size: 1em;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.07);
+  font-size: 0.85em;
   display: block;
   border-radius: 5px;
   outline: none;
   cursor: pointer;
-  padding: 0.75em 1.5em;
+  padding: 0.5em 1em;
   transition: all 400ms;
   width: 100%;
 }
 .btn__primary {
-  background: rgb(23, 98, 167);
-  background: linear-gradient(
-    45deg,
-    rgba(234, 84, 84, 1) 0%,
-    rgba(84, 158, 242, 1) 100%
-  );
-  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  color: white;
 }
 .btn__secondary {
   border: 2px solid var(--primary-color);
   color: var(--primary-color);
-  padding: calc(0.75em - 2px) calc(1.5em - 2px);
+  padding: calc(0.5em - 2px) calc(1em - 2px);
 }
 .btn:hover,
 .btn:focus {
   transform: scale(1.05);
+}
+.btn__primary:hover,
+.btn__primary:focus {
+  background-color: var(--primary-color-darker);
+}
+.btn__secondary:hover,
+.btn__secondary:focus {
+  color: var(--primary-color-darker);
 }
 
 /* General Styling */
@@ -162,7 +161,7 @@ textarea {
   text-align: left;
 }
 .header__logo {
-  width: 4em;
+  width: 3em;
   transition: 250ms;
 }
 .header__logo:focus,
@@ -170,14 +169,18 @@ textarea {
   transform: scale(1.1);
 }
 .header__nav--link {
+  padding-left: 0.5em;
+  border-left: 3px solid transparent;
   transition: 250ms;
 }
 .header__nav--link:visited {
-  color: var(--primary-color);
+  color: var(--text-color);
 }
 .header__nav--link:focus,
 .header__nav--link:hover {
-  color: var(--accent-color);
+  color: var(--primary-color);
+  border-left-color: var(--primary-color);
+  font-weight: bold;
 }
 
 /* Footer Styling */
@@ -204,12 +207,50 @@ textarea {
 }
 .footer__text {
   font-family: var(--secondary-font);
-  font-size: .75em;
+  font-size: 0.75em;
   color: #4d4f62;
-  opacity: .75;
+  opacity: 0.85;
   width: fit-content;
-  margin: 1em auto;
+  margin: 1.5em auto;
   text-align: center;
+}
+
+/* Tooltip  */
+.tooltip {
+  position: relative;
+}
+.tooltip .tooltiptext {
+  opacity: 0;
+  transition-property: all;
+  transition-delay: 0.25s;
+  transition-duration: 0.75s;
+  visibility: hidden;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  text-align: center;
+  font-size: 0.6em;
+  font-family: var(--secondary-font);
+  padding: 2.5px;
+  border-radius: 6px;
+  position: absolute;
+  width: 60px;
+  bottom: 55px;
+  right: -9px;
+  z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--primary-color) transparent transparent transparent;
 }
 
 /* Homepage Styling */
@@ -217,8 +258,10 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: center;
 }
 .home__container {
+  margin: 0 auto;
   width: 100%;
   max-width: 900px;
   display: grid;
@@ -248,7 +291,6 @@ textarea {
   max-width: 350px;
 }
 
-
 /* Work Styling */
 
 .work__heading {
@@ -265,7 +307,7 @@ textarea {
   max-width: 450px;
 }
 .work__item {
-  background-color: var(--secondary-color);
+  background-color: #ffffff;
   border-radius: 7px;
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.12);
   padding: 1.5em 2.5em;
@@ -278,17 +320,17 @@ textarea {
   margin-bottom: 1em;
 }
 .work__item--heading--accent {
-  color: var(--accent-color);
+  color: var(--primary-color);
+  font-size: 1.25em;
 }
 .work__item--text {
   font-family: var(--secondary-font);
   font-size: 0.85em;
-  color: var(--light-color);
+  color: var(--text-color-lighter);
   margin-bottom: 1.5em;
-  opacity: .5;
 }
 .work__item--text--accent {
-  opacity: 1;
+  color: var(--text-color);
 }
 .work__item--img--container {
   display: none;
@@ -325,7 +367,7 @@ textarea {
   margin-bottom: 0.5em;
 }
 .about__img {
-  margin-bottom: 5em;
+  margin-bottom: 7.5em;
 }
 .about__svg {
   width: 12em;
@@ -353,7 +395,7 @@ textarea {
   padding: 1.5em 2em;
   border-radius: 7px;
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.12);
-  background-color: var(--secondary-color);
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -471,12 +513,12 @@ textarea {
     font-size: 20px;
   }
   .home__container {
-    max-width: 1100px;
+    max-width: 900px;
     grid-template-columns: 1fr 1.5fr;
     justify-items: center;
     align-items: center;
     gap: 1em;
-    margin: 0.5em auto;
+    margin: 1.5em auto;
   }
   .btn__home {
     margin: 0 0.5em;
