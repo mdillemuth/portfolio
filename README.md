@@ -1,9 +1,32 @@
-# mdillemuth-personal-portfolio
+# Personal Portfolio Website
 
-This repository is source for my live personal portfolio, mattdillemuth.com
+This project is a portfolio I designed and built for myself. The purpose is to clearly display projects and provide an effective contact method. 
 
-This is a solo-project that is built with pure HTML & CSS. 
+## Motivation
 
-Key features include mobile-first responsive design, implementation of UI fundamentals, and the use of SASS as a CSS pre-processor. 
+The site is a fluid project that will frequently be updated with new content. As my skill and knowledge of development grows I will be able to implement more complex features and interactivity.
 
-My goals are to periodically update the website with my personal projects as they become available for display. Further, I intend to implement JavaScript to create a more interactive and experience for the user. 
+## Screenshots
+
+![Showcase](img/showcase-portfolio.gif)
+
+## Technology
+
+This website is built with pure HTML & CSS. No frameworks or libraries were used in this project. 
+
+## Tools Used 
+- Figma
+- Visual Studio Code
+- Browser Testing - [Crossbrowsertesting](https://crossbrowsertesting.com/)
+- W3C Validator - [Nu HTML Checker](https://validator.w3.org/)
+- Accessibility Visualization Toolkit [tota11y](https://khan.github.io/tota11y/)
+- [PostCSS](https://madlittlemods.github.io/postcss-css-variables/playground/)
+- [Autoprefixer](http://autoprefixer.github.io/)
+- Netlify (hosting & form functionality)
+
+
+
+
+
+
+
