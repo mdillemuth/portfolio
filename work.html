@@ -21,19 +21,15 @@
       href="favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="favicon/site.webmanifest" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.production.css" />
+    <link rel="stylesheet" href="css/style.production.css"/>
     <title>Matt Dillemuth | Work</title>
   </head>
-  <body>
-    <header class="header__container">
-      <a href="index.html" class="header__logo--container"
-        ><img src="img/md-logo.svg" class="header__logo" alt="name logo"
+  <body class="body body__work">
+    <header class="header header__home">
+      <a href="index.html" class="header__logo"
+        ><img src="img/md-logo.svg" alt="name logo"
       /></a>
-      <nav class="header__nav--container">
+      <nav class="header__nav">
         <ul role="menubar" class="header__nav--list">
           <li role="presentation">
             <a href="index.html" role="menuitem" class="header__nav--link"
@@ -68,71 +64,80 @@
           <h2 class="work__item--heading work__item--heading--accent">
             Responsive Landing Page Layout
           </h2>
-          <div class="work__item--img--container">
-            <a href="https://sleepy-boyd-2023be.netlify.app/" target="_blank">
-              <img
-                class="work__item--img--accent"
-                src="img/showcase.gif"
-                alt="Gif of website display"
-              />
-            </a>
+          <div class="showcase__container">
+            <div class="work__item--img--container">
+              <a href="https://sleepy-boyd-2023be.netlify.app/" target="_blank">
+                <img
+                  class="work__item--img--accent"
+                  src="img/showcase-fem.gif"
+                  alt="Gif of website display"
+                />
+              </a>
+            </div>
+            <div class="work__item--content--accent">
+              <p class="work__item--text work__item--text--accent">
+                This project was implemented in pure HTML & CSS using
+                professional-quality design assets and mockups.
+              </p>
+              <p class="work__item--text work__item--text--accent">
+                CSS Grid was modulated with media queries in order to create a
+                responsive layout that works on all screen sizes.
+              </p>
+            </div>
           </div>
-          <div class="work__item--content--accent">
-            <p class="work__item--text work__item--text--accent">
-              This project was implemented in pure HTML & CSS using
-              professional-quality design assets and mockups.
-            </p>
-            <p class="work__item--text work__item--text--accent">
-              CSS Grid was modulated with media queries in order to create a
-              responsive layout that works on all screen sizes.
-            </p>
+          <div class="btn__work--accent--container">
+            <div class="showcase__btn--container">
+              <a
+                class="btn btn__primary btn__work btn__work--accent"
+                href="https://sleepy-boyd-2023be.netlify.app/"
+                target="_blank"
+                >View project</a
+              >
+              <a
+                class="btn btn__secondary btn__work btn__work--accent"
+                href="https://github.com/mdillemuth/fem-four-card-feature"
+                target="_blank"
+                >View code</a
+              >
+            </div>
           </div>
-          <a
-            class="btn btn__primary btn__work btn__work--accent"
-            href="https://sleepy-boyd-2023be.netlify.app/"
-            target="_blank"
+        </div>
+        <div class="work__item work__item--sub">
+          <h2 class="work__item--heading">Personal Blog</h2>
+          <img class="work__item--sub--img" src="img/showcase-blog.gif" alt="Blog website screen capture">
+          <p class="work__item--text">
+            This is my first web project built using only HTML & CSS. It is fully responsive.
+          </p>
+          <a class="btn btn__secondary btn__work work__item--sub--btn" href="https://www.mindfulmatthew.com/"
             >View project</a
           >
         </div>
-        <div class="work__item">
-          <h2 class="work__item--heading">Lorem ipsum dolor</h2>
-          <p class="work__item--text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
-            velit quam delectus laudantium consequatur sequi minima deserunt
-            accusantium dignissimos esse.
-          </p>
-          <a class="btn btn__secondary btn__work" href="#">View project</a>
+        <div class="work__item work__item--sub">
+          <h2 class="work__item--heading">Portfolio Website</h2>
+          <p class="work__item--text">This site was designed with Figma and built with pure HTML & CSS.</p>
+          <p class="work__item--text">It is fully responsive and compatible with all modern browsers <em>including</em> IE11.</p>
+          <a
+            class="btn btn__secondary btn__work work__item--sub--btn"
+            href="https://github.com/mdillemuth/md-portfolio"
+            >View code</a
+          >
         </div>
-        <div class="work__item">
-          <h2 class="work__item--heading">Lorem ipsum dolor</h2>
+        <div class="work__item work__item--sub">
+          <h2 class="work__item--heading">Future Projects</h2>
           <p class="work__item--text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
-            velit quam delectus laudantium consequatur sequi minima deserunt
-            accusantium dignissimos esse.
+            JavaScript will be used in order to add in-browser functionality to this website as well as in new projects.
           </p>
-          <a class="btn btn__secondary btn__work" href="#">View project</a>
-        </div>
-        <div class="work__item">
-          <h2 class="work__item--heading">Lorem ipsum dolor</h2>
           <p class="work__item--text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
-            velit quam delectus laudantium consequatur sequi minima deserunt
-            accusantium dignissimos esse.
+            Next steps will be creating more advanced applications with JS and learning how to integrate a backend to web projects.
           </p>
-          <a class="btn btn__secondary btn__work" href="#">View project</a>
-        </div>
-        <div class="work__item">
-          <h2 class="work__item--heading">Lorem ipsum dolor</h2>
-          <p class="work__item--text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
-            velit quam delectus laudantium consequatur sequi minima deserunt
-            accusantium dignissimos esse.
           </p>
-          <a class="btn btn__secondary btn__work" href="#">View project</a>
+          <a class="btn btn__secondary btn__work work__item--sub--btn" href="#"
+            >On the way!</a
+          >
         </div>
       </div>
     </main>
-    <footer class="footer__container">
+    <footer class="footer footer__home">
       <p class="footer__text">Where you can find me</p>
       <ul role="menubar" class="footer__list">
         <li role="presentation" class="tooltip">
