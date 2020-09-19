@@ -4,9 +4,6 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
-
-/* *===== VARIABLES =====* */
-
 /* *===== RESET =====* */
 * {
   margin: 0;
@@ -277,13 +274,13 @@ html {
   align-items: center;
 }
 .header__logo img {
-  width: 2.75em;
+  width: 3em;
 }
 .header__nav li {
   text-align: right;
 }
 .header__nav--link {
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-family: Poppins, sans-serif;
   color: hsl(0, 0%, 29%);
   border-left: 3px solid transparent;
@@ -457,6 +454,7 @@ html {
   margin-bottom: 7.5em;
 }
 .about__svg {
+  margin-top: 2.5em;
   width: 12em;
 }
 .svg__trees {
@@ -642,8 +640,8 @@ html {
     margin: 0 auto;
   }
   .btn__work--accent {
-    margin: 0 1em;
-    width: 175px;
+    margin: 1em 1em;
+    margin-top: 2em;
     display: inline-block;
   }
   .work__item--text {
@@ -661,9 +659,11 @@ html {
   .work__item--sub {
     padding-bottom: 5em;
   }
+  .btn__work {
+    width: 150px;
+  }
   .work__item--sub--btn {
     position: absolute;
-    width: 150px;
     bottom: 0;
     right: 50px;
     margin-bottom: 1em;
@@ -684,8 +684,11 @@ html {
     -ms-grid-columns: 120px 1fr 120px;
     grid-template-columns: 120px 1fr 120px;
   }
+  .home__btn--container {
+    margin-top: 1em;
+  }
   .home__img {
-    width: 180px;
+    width: 250px;
   }
   .contact__container {
     -ms-grid-columns: 1fr 5em 1fr;
@@ -702,20 +705,59 @@ html {
   }
 }
 @media all and (min-width: 1600px) {
+  html {
+    font-size: 24px;
+  }
   .body {
     -ms-grid-columns: 150px 1fr 150px;
     grid-template-columns: 150px 1fr 150px;
   }
   .home__img {
-    width: 210px;
+    width: 250px;
+  }
+  .work__container {
+    -ms-grid-columns: 350px 350px 350px;
+    grid-template-columns: 350px 350px 350px;
+  }
+  .btn__work {
+    width: 250px;
   }
 }
 @media all and (min-width: 1900px) {
+  html {
+    font-size: 28px;
+  }
   .body {
-    -ms-grid-columns: 180px 1fr 180px;
-    grid-template-columns: 180px 1fr 180px;
+    -ms-grid-columns: 200px 1fr 200px;
+    grid-template-columns: 200px 1fr 200px;
   }
   .home__img {
-    width: 250px;
+    width: 350px;
+  }
+  .main__home {
+    -ms-grid-rows: 350px;
+    grid-template-rows: 350px;
+  }
+  .home__content {
+    height: 100%;
+  }
+  .contact__form {
+    max-width: 800px;
+  }
+}
+
+@media all and (min-width: 2200px) {
+  html {
+    font-size: 36px;
+  }
+  .work__container {
+    -ms-grid-columns: 400px 400px 400px;
+    grid-template-columns: 400px 400px 400px;
+  }
+  .btn__work {
+    width: 300px;
+  }
+  .contact__form {
+    max-width: 1000px;
   }
 }
