@@ -84,7 +84,7 @@ html {
 }
 .btn:hover,
 .btn:focus {
-  transform: scale(1.03);
+  transform: scale(1.1);
 }
 
 /* *===== ANIMATIONS =====* */
