@@ -221,7 +221,7 @@ html {
   width: 250px;
   background-color: var(--primary-color);
   transition: 500ms ease-in-out;
-  opacity: 0;
+  display: none;
 }
 .header__nav--link {
   letter-spacing: 1px;
@@ -235,7 +235,7 @@ html {
 }
 .shift {
   right: 0;
-  opacity: 1;
+  display: unset;
 }
 
 /* *===== HAMBURGER =====* */
