@@ -242,6 +242,7 @@ html {
 
 /* *===== HEADER =====* */
 .header {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
