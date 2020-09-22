@@ -279,6 +279,7 @@ html {
   -webkit-transition: 500ms ease-in-out;
   -o-transition: 500ms ease-in-out;
   transition: 500ms ease-in-out;
+  opacity: 0;
 }
 .header__nav--link {
   letter-spacing: 1px;
@@ -292,6 +293,7 @@ html {
 }
 .shift {
   right: 0;
+  opacity: 1;
 }
 
 /* *===== HAMBURGER =====* */
@@ -594,6 +596,7 @@ html {
     background-color: unset;
     width: unset;
     padding: unset;
+    opacity: 1;
   }
   .header__nav--list {
     display: -webkit-box;
