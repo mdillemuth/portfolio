@@ -220,8 +220,6 @@ html {
       -ms-flex-align: center;
           align-items: center;
   background-color: #fafafa;
-
-  overflow: hidden;
 }
 .header {
   -ms-grid-row: 1;
@@ -592,6 +590,7 @@ html {
     grid-template-columns: 60px 1fr 60px;
   }
   .header__nav {
+    display: unset;
     position: unset;
     background-color: unset;
     width: unset;
