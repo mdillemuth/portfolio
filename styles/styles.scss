@@ -155,7 +155,7 @@ html {
   opacity: 1;
 }
 .tooltip .tooltiptext::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   top: 100%;
   left: 50%;
@@ -171,13 +171,11 @@ html {
   grid-template-columns: 30px 1fr 30px;
   grid-template-rows: 100px 1fr 100px;
   grid-template-areas:
-    ". header ."
-    ". main ."
-    ". footer .";
+    '. header .'
+    '. main .'
+    '. footer .';
   align-items: center;
   background-color: var(--background-color);
-
-  overflow: hidden;
 }
 .header {
   grid-area: header;
@@ -488,13 +486,13 @@ html {
   }
   .header__nav--link {
     margin: 0 1em;
-    font-size: .9em;
+    font-size: 0.9em;
     color: var(--text-color);
   }
   .header__nav--link:hover,
   .header__nav--link:focus {
-  color: var(--primary-color);
-  border-left-color: var(--primary-color);
+    color: var(--primary-color);
+    border-left-color: var(--primary-color);
   }
   .hamburger {
     display: none;
@@ -505,7 +503,7 @@ html {
 }
 @media all and (min-width: 1000px) {
   html {
-    font-size: 18px;
+    font-size: 17px;
   }
   .body {
     grid-template-columns: 90px 1fr 90px;
@@ -525,8 +523,8 @@ html {
   .work__container {
     grid-template-columns: 250px 250px 250px;
     grid-template-areas:
-      "accent accent accent"
-      "one two three";
+      'accent accent accent'
+      'one two three';
   }
   .work__item--accent {
     grid-area: accent;
@@ -586,7 +584,7 @@ html {
 }
 @media all and (min-width: 1300px) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
   .body {
     grid-template-columns: 120px 1fr 120px;
@@ -610,7 +608,7 @@ html {
 }
 @media all and (min-width: 1600px) {
   html {
-    font-size: 24px;
+    font-size: 19px;
   }
   .body {
     grid-template-columns: 150px 1fr 150px;
@@ -627,7 +625,7 @@ html {
 }
 @media all and (min-width: 1900px) {
   html {
-    font-size: 28px;
+    font-size: 20px;
   }
   .body {
     grid-template-columns: 200px 1fr 200px;
@@ -646,9 +644,6 @@ html {
   }
 }
 @media all and (min-width: 2200px) {
-  html {
-    font-size: 36px;
-  }
   .work__container {
     grid-template-columns: 400px 400px 400px;
   }

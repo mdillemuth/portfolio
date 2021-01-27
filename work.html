@@ -21,7 +21,7 @@
       href="favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="favicon/site.webmanifest" />
-    <link rel="stylesheet" href="css/style.production.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>Matt Dillemuth | Work</title>
   </head>
   <body class="body body__work">
@@ -67,14 +67,11 @@
       <div class="work__container">
         <div class="work__item work__item--accent">
           <h2 class="work__item--heading work__item--heading--accent">
-           myFightFlix Full-Stack App 
+            myFightFlix Full-Stack App
           </h2>
           <div class="showcase__container">
             <div class="work__item--img--container">
-              <a
-                href=https://my-fight-flix.netlify.app/"
-                target="_blank"
-              >
+              <a href="https://my-fight-flix.netlify.app/" target="_blank">
                 <img
                   class="work__item--img--accent"
                   src="img/myFightFlix-quick-showcase.gif"
@@ -84,10 +81,18 @@
             </div>
             <div class="work__item--content--accent">
               <p class="work__item--text work__item--text--accent">
-                This project is a full-stack application built with the MERN stack. It is a single-page application.
+                This project is a full-stack single-page application built with
+                the MERN stack. My role included designing and developing both
+                the front-end and the back-end. The app uses RESTful
+                architecture, Redux state management, and is used through a
+                front-end built in React.
               </p>
+              <p class="work__item--text work__item--text--accent"></p>
               <p class="work__item--text work__item--text--accent">
-                My role included designing and developing both the front-end and the back-end. Redux state management was used.
+                The app features client-side and server-side verification, an
+                alert system implemented with Redux, sorting and filtering with
+                lodash, and is fully responsive. Users can create an account and
+                add movies to their list of favorites.
               </p>
             </div>
           </div>
@@ -101,24 +106,65 @@
               >
               <!-- <a
                 class="btn btn__secondary btn__work btn__work--accent"
-                href="https://github.com/mdillemuth/fightFlix-client"
+                href="fight-flix-case-study.html"
                 target="_blank"
-                >Client code</a
-              >
-              <a
-              class="btn btn__secondary btn__work btn__work--accent"
-              href="https://github.com/mdillemuth/fightFlix"
-              target="_blank"
-              >Server code</a
-            > -->
-              <a
-              class="btn btn__secondary btn__work btn__work--accent"
-              href="fight-flix-case-study.html"
-              target="_blank"
-              >Case Study</a
-            >
+                >Case Study</a
+              > -->
             </div>
           </div>
+        </div>
+        <div class="work__item work__item--sub">
+          <h2 class="work__item--heading">Meet App</h2>
+          <a href="https://mdillemuth.github.io/meet-app/" target="_blank">
+            <img
+              class="work__item--sub--img"
+              src="img/meet-app-final-showcase.gif"
+              alt="app"
+          /></a>
+          <p class="work__item--text">
+            A serveless progressive-web app using the Google calendar API that
+            users can install and use offline. Features authorization with AWS
+            lamba serverless functions and OAuth2 authentication flow. The app
+            is developed with a test-driven development approach aided by jest
+            and enzyme libraries.
+          </p>
+          <p class="work__item--text">
+            Users are able to use an auto-complete searching feature with
+            suggestions, view data visualization implemented with recharts, and
+            install the app on their home screen for offline use.
+          </p>
+          <a
+            class="btn btn__secondary btn__work work__item--sub--btn"
+            href="https://mdillemuth.github.io/fem-intro-sign-up-form/"
+            target="_blank"
+            >View project</a
+          >
+        </div>
+
+        <div class="work__item work__item--sub">
+          <h2 class="work__item--heading">Pokédex App</h2>
+          <a href="https://mdillemuth.github.io/pokedex-app/" target="_blank">
+            <img
+              class="work__item--sub--img"
+              src="img/pokedex-showcase.gif"
+              alt="Screen capture of site"
+          /></a>
+          <p class="work__item--text">
+            This project was implemented in HTML, CSS, & JavaScript using the
+            RESTful Pokédex API. Users are able to filter the list by searching
+            for a specific pokémon. The app implements modals, contact form
+            validation, a back-top-top button, and accordion components.
+          </p>
+          <p class="work__item--text">
+            The app has consistent styling with fundamentally sound design
+            features including a reasonable use of visual hierarchy, color &
+            contrast, alignment, and whitespace.
+          </p>
+          <a
+            class="btn btn__secondary btn__work work__item--sub--btn"
+            href="https://mdillemuth.github.io/pokedex-app/"
+            >View project</a
+          >
         </div>
         <div class="work__item work__item--sub">
           <h2 class="work__item--heading">Personal Blog</h2>
@@ -131,53 +177,18 @@
           </a>
           <p class="work__item--text">
             A fictitious personal blog that features responsive design with HTML
-            & CSS.
+            & CSS. The styling is implemented with vanilla CSS and without the
+            use of a library such as Bootstrap.
+          </p>
+          <p class="work__item--text">
+            The site features a dark themed design and Gimp was used to darken
+            the background image behind the contact form to improve visual
+            hierarchy. The color theme is inspired by my favorite Formula 1
+            driver, Lewis Hamilton.
           </p>
           <a
             class="btn btn__secondary btn__work work__item--sub--btn"
             href="https://www.mindfulmatthew.com/"
-            target="_blank"
-            >View project</a
-          >
-        </div>
-        <div class="work__item work__item--sub">
-          <h2 class="work__item--heading">Pokedex App</h2>
-          <a
-            href="https://mdillemuth.github.io/pokedex-app/"
-            target="_blank"
-          >
-            <img
-              class="work__item--sub--img"
-              src="img/pokedex-showcase.gif"
-              alt="Screen capture of site"
-          /></a>
-          <p class="work__item--text">
-            This project was implemented in HTML, CSS, & JavaScript using the RESTful Pokedex API. 
-          </p>
-          <a
-            class="btn btn__secondary btn__work work__item--sub--btn"
-            href="https://mdillemuth.github.io/pokedex-app/"
-            >View project</a
-          >
-        </div>
-        <div class="work__item work__item--sub">
-          <h2 class="work__item--heading">Login Form</h2>
-          <a
-            href="https://mdillemuth.github.io/fem-intro-sign-up-form/"
-            target="_blank"
-          >
-            <img
-              class="work__item--sub--img"
-              src="img/showcase-form.gif"
-              alt="Screen capture of site"
-          /></a>
-          <p class="work__item--text">
-            A responsive login form that features client-side form validation
-            with vanilla JavaScript.
-          </p>
-          <a
-            class="btn btn__secondary btn__work work__item--sub--btn"
-            href="https://mdillemuth.github.io/fem-intro-sign-up-form/"
             target="_blank"
             >View project</a
           >
