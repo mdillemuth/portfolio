@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/9a4fba4c80.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>myFightFlix | Case Study</title>
+  </head>
+  <body class="body">
+    <header class="container-fluid p-5 text-center">
+      <h1 class="fw-bold">my<span class="title">Fight</span>Flix</h1>
+      <h2 class="fw-light">Case Study</h2>
+    </header>
+    <!-- Challenge/Goal/Process Section -->
+    <section class="beginning container-fluid bg-white py-5">
+      <h3 class="text-center text-dark fw-bold">Project Overview</h3>
+      <div class="row row-cols-auto align-items-center justify-content-center">
+        <div class="col-lg-4 py-3">
+          <div
+            id="carousel-top"
+            class="carousel slide mx-auto"
+            data-bs-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active bg-danger"
+              ></li>
+              <li
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                class="bg-danger"
+              ></li>
+              <li
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                class="bg-danger"
+              ></li>
+              <li
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="3"
+                class="bg-danger"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="overlay">
+                  <img
+                    src="img/overview/login.png"
+                    class="d-block w-100 rounded"
+                    alt="app"
+                  />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/overview/movies.png"
+                  class="d-block w-100 rounded"
+                  alt="app"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/overview/rocky.png"
+                  class="d-block w-100 rounded"
+                  alt="app"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/overview/register.png"
+                  class="d-block w-100 rounded"
+                  alt="app"
+                />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carousel-top"
+              role="button"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon bg-danger rounded"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carousel-top"
+              role="button"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon bg-danger rounded"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-4">
+          <div>
+            <h3 class="title">The Challenge</h3>
+            <p>
+              Build a full-stack web app where users can sign up and create a
+              list of their favorite movies.
+            </p>
+          </div>
+          <div>
+            <h3>The Goal</h3>
+            <p>
+              Write readable code that is both easy to understand and maintain.
+            </p>
+          </div>
+          <div>
+            <h3 class="title">The Process</h3>
+            <ol>
+              <li>
+                Start by building the database and write the back-end logic of
+                how the app can be accessed.
+              </li>
+              <li>
+                Develop the interactive front-end that enables users to
+                experience the app's features.
+              </li>
+              <li>
+                Use version control along the way to track changes and host the
+                code on GitHub.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Front-End / Back-End Section -->
+    <section class="middle container-fluid text-light py-5">
+      <h3 class="text-center fw-bold text-dark">Application Structure</h3>
+      <div
+        class="row row-cols-auto align-items-center justify-content-center py-5"
+      >
+        <div class="col-lg-4">
+          <div class="text-dark">
+            <h3 class="title">Back-End</h3>
+            <ul>
+              <li>
+                Using <b>Node</b> and <b>Express</b>, design a RESTful API and
+                testing the endpoints with <b>Postman</b>.
+              </li>
+              <li>
+                Using <b>MongoDB</b> and <b>Mongoose</b>, create a
+                non-relational database and business logic.
+              </li>
+              <li>
+                Using <b>Passport</b> and <b>JWT</b>, authenticate and authorize
+                users of the app.
+              </li>
+              <li>Using <b>Heroku</b>, host the app’s back-end API.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-4 col-md-8">
+          <img
+            class="img-fluid d-block rounded"
+            src="img/endpoints.png"
+            alt="API endpoints"
+          />
+        </div>
+      </div>
+      <div
+        class="row row-cols-auto align-items-center justify-content-center mt-5"
+      >
+        <div class="col-lg-4 col-md-8">
+          <img
+            class="img-fluid d-block rounded"
+            src="img/front-end.png"
+            alt="server"
+          />
+        </div>
+        <div class="col-lg-4">
+          <div class="text-dark">
+            <h3 class="title">Front-End</h3>
+            <ul>
+              <li>
+                Using <b>React</b>, create separate components for the different
+                views of the application.
+              </li>
+              <li>
+                Using <b>React-Router-Dom</b>, implement logic to handle app
+                requests and navigate users to different views within the app.
+              </li>
+              <li>
+                Using <b>Redux</b> and <b>React-Redux</b>, manage the app’s
+                state and data flow by implementing the flux design pattern.
+              </li>
+              <li>Using <b>Netlify</b>, host the app’s front-end client.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+    </section>
+
+    <!-- Tabs Alert/Loading/Filtering Section -->
+    <section>
+      <div class="bg-dark text-center">
+        <h3 class="text-light fw-bold py-3">Highlighted Features</h3>
+        <!-- Tabs themselves -->
+        <div class="tabs bg-dark pt-1">
+          <div class="x-container">
+            <div id="tab-1" class="tab-item tab-border text-light">
+              <i class="fas fa-exclamation-circle fa-3x"></i>
+              <p class="d-none d-md-block">Alert</p>
+            </div>
+            <div id="tab-2" class="tab-item text-light">
+              <i class="fas fa-spinner fa-3x"></i>
+              <p class="d-none d-md-block">Loading Spinner</p>
+            </div>
+            <div id="tab-3" class="tab-item text-light">
+              <i class="fas fa-filter fa-3x"></i>
+              <p class="d-none d-md-block">Filtering & Sorting</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Tab Content -->
+      <div class="tab-content">
+        <div class="x-container">
+          <!-- Tab Content 1 -->
+          <div id="tab-1-content" class="tab-content-item container-fluid show">
+            <div
+              class="row row-cols-auto align-items-center justify-content-center"
+            >
+              <div class="col-lg-5">
+                <div
+                  id="carousel-tab-1"
+                  class="carousel slide mx-auto"
+                  data-bs-ride="carousel"
+                >
+                  <ol class="carousel-indicators">
+                    <li
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="0"
+                      class="active bg-danger"
+                    ></li>
+                    <li
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="1"
+                      class="bg-danger"
+                    ></li>
+                    <li
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="2"
+                      class="bg-danger"
+                    ></li>
+                    <li
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="3"
+                      class="bg-danger"
+                    ></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="overlay">
+                        <img
+                          src="img/tab-1/login-alert.png"
+                          class="d-block w-100 rounded"
+                          alt="alert displayed during login"
+                        />
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="img/tab-1/alert-component.png"
+                        class="d-block w-100 rounded"
+                        alt="alert react component"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="img/tab-1/alert-redux.png"
+                        class="d-block w-100 rounded"
+                        alt="alert in redux"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="img/tab-1/alert-call.png"
+                        class="d-block w-100 rounded"
+                        alt="component calling an alert"
+                      />
+                    </div>
+                  </div>
+                  <a
+                    class="carousel-control-prev"
+                    href="#carousel-tab-1"
+                    role="button"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon bg-danger rounded"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </a>
+                  <a
+                    class="carousel-control-next"
+                    href="#carousel-tab-1"
+                    role="button"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon bg-danger rounded"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-1"></div>
+              <div class="col-lg-6">
+                <h3 class="title">Component</h3>
+                <p>
+                  The alert component is used to alert the user of successful or
+                  unsuccessfuls account login, registration, or update attempts.
+                  It's integration in the app is very concise, meaning that it
+                  does not have to be added to a component that wants to use it.
+                </p>
+                <h3>Implementation</h3>
+                <p>
+                  The component is rendered directly from the top parent
+                  component and is displayed under the navigation bar. This
+                  means that components that want to call the Alert do not need
+                  to import it directly, they only need to create the action for
+                  it with Redux.
+                </p>
+                <p>
+                  Redux is used to manage the Alert state. A timeout function
+                  has been added to make alerts automatically disappear after a
+                  fixed time. This was implemented in order to improve UX by not
+                  requiring users to have to click to remove alerts themselves.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Content 2 -->
+          <div id="tab-2-content" class="tab-content-item container-fluid">
+            <div
+              class="row row-cols-auto align-items-center justify-content-center"
+            >
+              <div class="col-lg-5">
+                <div
+                  id="carousel-tab-2"
+                  class="carousel slide mx-auto"
+                  data-bs-ride="carousel"
+                >
+                  <ol class="carousel-indicators">
+                    <li
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="0"
+                      class="active bg-danger"
+                    ></li>
+                    <li
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="1"
+                      class="bg-danger"
+                    ></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="overlay">
+                        <img
+                          src="img/tab-2/loading-spinner.gif"
+                          class="d-block w-100 rounded"
+                          alt="loading spinner in action"
+                        />
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="img/tab-2/loading-redux.png"
+                        class="d-block w-100 rounded"
+                        alt="loading redux state"
+                      />
+                    </div>
+                  </div>
+                  <a
+                    class="carousel-control-prev"
+                    href="#carousel-tab-2"
+                    role="button"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon bg-danger rounded"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </a>
+                  <a
+                    class="carousel-control-next"
+                    href="#carousel-tab-2"
+                    role="button"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon bg-danger rounded"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-1"></div>
+              <div class="col-lg-6">
+                <h3 class="title">Component</h3>
+                <p>
+                  The loading spinner component is used to inform the user that
+                  the app is calling the backend's API and is handling their
+                  request. During development, it was noticed that login
+                  attempts could take over 5 seconds and it begged the question,
+                  "Is the app doing anything?". To answer that question, a
+                  simple loading spinner was implemented.
+                </p>
+                <h3>Implementation</h3>
+                <p>
+                  The spinner gif was created from a free online service, and
+                  was customized to use the same color red of the app's theme.
+                  Components that use the loading gif import and render it
+                  directly.
+                </p>
+                <p>
+                  In the Redux store for 'users', the loading state is
+                  manipulated on actions that require an API call. The loading
+                  state is only true after a API request has been sent and
+                  before it has been resolved. The simplicity of its
+                  implementation reinforces the readability of the app's code.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Content 3 -->
+          <div id="tab-3-content" class="tab-content-item container-fluid">
+            <div
+              class="row row-cols-auto align-items-center justify-content-center"
+            >
+              <div class="col-lg-5">
+                <div
+                  id="carousel-tab-3"
+                  class="carousel slide mx-auto"
+                  data-bs-ride="carousel"
+                >
+                  <ol class="carousel-indicators">
+                    <li
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="0"
+                      class="active bg-danger"
+                    ></li>
+                    <li
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="1"
+                      class="bg-danger"
+                    ></li>
+                    <li
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="2"
+                      class="bg-danger"
+                    ></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="overlay">
+                        <img
+                          src="img/tab-3/filter-ui.png"
+                          class="d-block w-100 rounded"
+                          alt="app"
+                        />
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="img/tab-3/director-filter.png"
+                        class="d-block w-100 rounded"
+                        alt="app"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="img/tab-3/filter-state.png"
+                        class="d-block w-100 rounded"
+                        alt="app"
+                      />
+                    </div>
+                  </div>
+                  <a
+                    class="carousel-control-prev"
+                    href="#carousel-tab-3"
+                    role="button"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon bg-danger rounded"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </a>
+                  <a
+                    class="carousel-control-next"
+                    href="#carousel-tab-3"
+                    role="button"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon bg-danger rounded"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-1"></div>
+              <div class="col-lg-6">
+                <h3 class="title">Component</h3>
+                <p>
+                  A key feature of the app is the user's ability to filter and
+                  sort movies. Users can filter by a search query, by director,
+                  or genre. They are able to sort by movie title alphabetically
+                  and sorting is applied to the filtered set of data.
+                </p>
+                <h3>Implementation</h3>
+                <p>
+                  The filter array method in JavaScript is used in order to
+                  filter by director, genre, or query. Capitalization and
+                  leading or trailing spaces are accounted for in the queries.
+                  The 'orderBy' function from the library, Lodash, is used in
+                  order to perform sorting alphabetical sorting by movie title.
+                </p>
+                <p>
+                  Redux is used to handle the movies state and facilitates
+                  persisting the filters or sorting methods applied to the data
+                  set. The actions to sort or filter movies are able to be
+                  called the UI component that handles the filtering and
+                  sorting.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Retrospect Section -->
+    <section class="container-fluid p-5">
+      <h3 class="fw-bold text-center my-0 title">Personal Reflection</h3>
+      <div class="row row-cols-auto align-items-center justify-content-center">
+        <div class="col-lg-6 col-md-8">
+          <p class="my-5">
+            This project has unequivocally been the defining learning experience
+            of my web development education. React and Redux were completely new
+            technologies for me and I felt humbled by their complexity. What I
+            came to learn however, was that these libraries are incredibly
+            powerful and capable of scaling extremely well.
+          </p>
+          <!-- Overcoming Obstacles -->
+          <div class="py-3">
+            <h4 class="text-center pb-3">Overcoming Obstacles</h4>
+            <p>
+              My first challenge was adopting the new paradigm of viewing an app
+              as a collection of modules that are all interacting with
+              eachother. This required me to modify my perspective and develop a
+              more complete understanding of web development as a whole.
+            </p>
+            <p>
+              Before implementing Redux, there was one area of the app that was
+              especially trying for me. The issue I was having was that I was
+              unable to refresh the page of a component that was rendering data
+              fetched from the backend by the API.
+            </p>
+            <figure class="py-3">
+              <img
+                class="img-fluid mx-auto d-block rounded pt-3"
+                src="img/retrospective/error.png"
+                alt="screenshot"
+              />
+              <figcaption class="text-center">
+                <i>
+                  <p class="mb-0">
+                    A typical error message I encountered during development.
+                  </p>
+                  <p>(Note: this example is not from my application)</p>
+                </i>
+              </figcaption>
+            </figure>
+
+            <p>
+              The component was able to render the first time because the data
+              was being passed as a prop. However, on refresh, the app would
+              attempt to render the component before the data could be fetched
+              from the api. Then the app would throw an error stating that it
+              could not filter an undefined data set.
+            </p>
+            <p>
+              The solution I implemented was to use a ternary operator in the
+              component's return statement. This enabled the component to check
+              that the data was in the state before rendering the elements that
+              required said data (and before leveraging Redux's state management
+              capabilities).
+            </p>
+          </div>
+
+          <!-- Realizing Success-->
+          <div class="py-3">
+            <h4 class="text-center title pb-3">Realizing Success</h4>
+            <figure class="py-3">
+              <img
+                class="img-fluid mx-auto d-block rounded pt-3"
+                src="img/retrospective/feedback.png"
+                alt="screenshot"
+              />
+              <figcaption>
+                <p class="text-center">
+                  <i>
+                    Feedback from a full-stack developer and my CareerFoundry
+                    mentor,
+                    <a
+                      href="https://careerfoundry.com/en/users/oscar-dominguez"
+                      target="_blank"
+                      >Tony Dominguez</a
+                    >
+                  </i>
+                </p>
+              </figcaption>
+            </figure>
+            <p class="my-3">
+              As mentioned, one of my goals for this project was to write clean
+              code. React and Redux were great tools to accomplish this.
+            </p>
+            <p>
+              With Redux, I decided to use the
+              <a href="https://redux-toolkit.js.org/" target="_blank"
+                ><i>@reduxjs/toolkit</i>
+              </a>
+              library in order to create 'slices' for each state being managed
+              by Redux. This enabled me to consolidate the state, reducers, and
+              actions into a single file. These files were concise and focused
+              on a single aspect of the app being handled with Redux, namely
+              <i>users</i>, <i>movies</i>, and <i>alerts</i>.
+            </p>
+            <p>
+              Finally, the design and theme were a pleasure to implement. I was
+              able to leverage my knowledge of UI design in order to create a
+              clean and visually-appealing layout in my app. I improved the UX
+              by implementing features such as the loading spinner, alert
+              messages, and navigating the user back to the login screen after
+              logging out.
+            </p>
+            <figure class="py-3">
+              <img
+                class="img-fluid mx-auto d-block rounded pt-3"
+                src="img/retrospective/main-view.png"
+                alt="screenshot"
+              />
+              <figcaption>
+                <i>
+                  One of my proudest moments was reducing clutter in the app's
+                  React routing logic contained in the parent component,
+                  <b>main-view.js</b></i
+                >
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Closing -->
+          <div class="py-3">
+            <h4 class="text-center title pb-3">Interested in Learning More?</h4>
+            <p>
+              <a href="https://my-fight-flix.netlify.app/" target="_blank"
+                >Come visit the app</a
+              >
+              , make an account, and experience it for yourself. You will not
+              receive any emails from me and your information will not be used
+              in anyway.
+            </p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark py-5">
+      <div class="row row-cols-auto align-items-center justify-content-center">
+        <div class="col text-center text-white">
+          <p>&copy; Copyright 2021 | Matt Dillemuth</p>
+          <p class="title">
+            <a href="mailto:mattdillemuth@gmail.com" target="_blank"
+              >mattdillemuth@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
