@@ -551,6 +551,10 @@ html {
   fill: #3ac4bd;
 }
 
+.btn__about a {
+  color: #fff;
+}
+
 /* *=====CONTACT PAGE =====* */
 .contact__container {
   display: -ms-grid;
