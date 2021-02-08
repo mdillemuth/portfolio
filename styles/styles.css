@@ -692,13 +692,19 @@ html {
   .work__container {
     -ms-grid-columns: 250px 250px 250px;
         grid-template-columns: 250px 250px 250px;
-        grid-template-areas: 'accent accent accent' 'one two three';
+        grid-template-areas: 'accent accent accent' 'one two three' 'mentor mentor mentor';
   }
   .work__item--accent {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-area: accent;
+  }
+  .work__item--mentor {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: mentor;
   }
   .work__item--img--container,
   .work__item--sub--img {
