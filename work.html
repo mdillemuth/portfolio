@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <title>Matt Dillemuth | Work</title>
   </head>
-  <body class="body body__work">
+  <body class="body">
     <header class="header header__home">
       <a href="index.html" class="header__logo"
         ><img src="img/md-logo.svg" alt="name logo"
@@ -59,176 +59,108 @@
         </ul>
       </nav>
     </header>
-    <main class="main">
+    <main class="main main__work">
       <h1 class="heading">
         Some of my
         <span class="heading__accent">projects.</span>
       </h1>
       <div class="work__container">
-        <div class="work__item work__item--accent">
-          <h2>myFightFlix Full-Stack App</h2>
-          <div class="showcase__container">
-            <div class="work__item--img--container">
-              <a href="https://my-fight-flix.netlify.app/" target="_blank">
-                <img
-                  class="work__item--img--accent"
-                  src="img/showcase-myFightFlix.gif"
-                  alt="myFightFlix app"
-                />
-              </a>
-            </div>
-            <div>
-              <p>
-                This project is a full-stack single-page application built with
-                the MERN stack. My role included designing and developing both
-                the front-end and the back-end. The app uses RESTful
-                architecture, Redux state management, and is used through a
-                front-end built in React.
-              </p>
-              <p>
-                The app features client-side and server-side verification, an
-                alert system implemented with Redux, sorting and filtering with
-                lodash, and is fully responsive. Users can create an account and
-                add movies to their list of favorites.
-              </p>
-            </div>
-          </div>
-
-          <div class="showcase__btn--container">
-            <a
-              class="btn btn__primary btn__work btn__work--accent"
-              href="https://my-fight-flix.netlify.app/"
-              target="_blank"
-              >View project</a
-            >
-            <a
-              class="btn btn__secondary btn__work btn__work--accent"
-              href="myFightFlix-case-study.html"
-              target="_blank"
-              >Case Study</a
-            >
-            <a
-              href="https://my-fight-flix.herokuapp.com/documentation.html"
-              target="_blank"
-              class="btn btn__secondary btn__work btn__work--accent"
-              >API Documentation</a
-            >
-          </div>
-        </div>
-        <div class="work__item work__item--sub">
-          <h2>Chat App</h2>
-          <a href="https://github.com/mdillemuth/chat-app" target="_blank">
-            <img
-              class="work__item--sub--img"
-              src="img/showcase-chat-app.gif"
-              alt="chat app"
-            />
-          </a>
+        <div class="work__item">
+          <img src="img/work/chat-app.png" alt="chat-app" />
           <p>
-            A mobile chat app that provides users wiht a chat interface and
-            options to share images and their location. Developed using React
-            Native and Expo.
-          </p>
-          <p>
-            The app uses Google Firestore as its serverless document database.
-            Gifted chat library is used in order to provide the chat interface.
+            A chat app for mobile devices built with React Native, Expo, and
+            Google Firestore Database that allows users to exchange messages,
+            images, and their location
           </p>
           <a
-            class="btn btn__secondary btn__work work__item--sub--btn"
+            class="btn btn__primary"
             href="https://github.com/mdillemuth/chat-app"
             target="_blank"
-            >View project</a
+            >Chat App</a
           >
         </div>
-        <div class="work__item work__item--sub">
-          <h2>Meet App</h2>
-          <a href="https://mdillemuth.github.io/meet-app/" target="_blank">
-            <img
-              class="work__item--sub--img"
-              src="img/meet-app-final-showcase.gif"
-              alt="app"
-          /></a>
+        <div class="work__item">
+          <img src="img/work/meet-app.png" alt="meet-app" />
           <p>
-            A serveless progressive-web app using the Google calendar API that
-            users can install and use offline. Features authorization with AWS
-            lamba serverless functions and OAuth2 authentication flow. The app
-            is developed with a test-driven development approach aided by jest
-            and enzyme libraries.
-          </p>
-          <p>
-            Users are able to use an auto-complete searching feature with
-            suggestions, view data visualization implemented with recharts, and
-            install the app on their home screen for offline use.
+            A serverless progressive-web app (PWA) built with React using
+            test-driven development (TDD). The app uses the Google Calendar API
+            to fetch upcoming events
           </p>
           <a
-            class="btn btn__secondary btn__work work__item--sub--btn"
-            href="https://mdillemuth.github.io/meet-app/"
+            class="btn btn__primary"
+            href="https://github.com/mdillemuth/meet-app"
             target="_blank"
-            >View project</a
+            >Meet App</a
           >
         </div>
-        <div class="work__item work__item--sub">
-          <h2>Pokédex App</h2>
-          <a href="https://mdillemuth.github.io/pokedex-app/" target="_blank">
-            <img
-              class="work__item--sub--img"
-              src="img/showcase-pokedex.gif"
-              alt="pokedex app"
-          /></a>
+        <div class="work__item">
+          <img src="img/work/myFightFlix.png" alt="myFightFlix" />
           <p>
-            This project was implemented in HTML, CSS, & JavaScript using the
-            RESTful Pokédex API. Users are able to filter the list by searching
-            for a specific pokémon. The app implements modals, contact form
-            validation, a back-top-top button, and accordion components.
-          </p>
-          <p>
-            The app has consistent styling with fundamentally sound design
-            features including a reasonable use of visual hierarchy, color &
-            contrast, alignment, and whitespace.
+            A full-stack app built with MongoDB, Express.js, React.js, and
+            Node.js (MERN stack) that allows users to learn about their favorite
+            fighting films
           </p>
           <a
-            class="btn btn__secondary btn__work work__item--sub--btn"
-            href="https://mdillemuth.github.io/pokedex-app/"
-            >View project</a
+            class="btn btn__primary"
+            href="myFightFlix-case-study.html"
+            target="_blank"
+            >myFightFlix</a
           >
         </div>
-        <div class="work__item work__item--mentor">
-          <h2>Frontend Mentor Projects</h2>
-          <div class="showcase__container">
-            <div class="work__item--img--container">
-              <a href="https://my-fight-flix.netlify.app/" target="_blank">
-                <img
-                  class="work__item--img--accent"
-                  src="img/showcase-mentor.gif"
-                  alt="frontend mentor"
-                />
-              </a>
-            </div>
-            <div>
-              <p>
-                Frontend Mentor is a website that provides challenges for
-                developers to practice their frontend skills with. The
-                challenges provide you with a style guideline and design assets
-                to implement. The developer is then tasked with implementing the
-                features of the challenge.
-              </p>
-              <p>
-                I have completed a variety of challenges on Frontend Mentor and
-                use its platform in order to improve my frontend skills. You can
-                view the projects I have completed by looking at my profile on
-                their platform.
-              </p>
-            </div>
-          </div>
-
-          <div class="showcase__btn--container">
-            <a
-              class="btn btn__primary btn__work btn__work--accent"
-              href="https://www.frontendmentor.io/profile/mdillemuth/"
-              target="_blank"
-              >View Profile</a
-            >
-          </div>
+        <div class="work__item">
+          <img src="img/work/pokedex-app.png" alt="pokedex-app" />
+          <p>
+            A small web app built with HTML, CSS, and JavaScript that loads
+            pokémon data from an external public API that enables the viewing of
+            pokémon information in detail
+          </p>
+          <a
+            class="btn btn__primary"
+            href="https://mdillemuth.github.io/pokedex-app/"
+            target="_blank"
+            >Pokédex App</a
+          >
+        </div>
+        <div class="work__item">
+          <img src="img/work/todo-app.png" alt="todo-app" />
+          <p>
+            A simple todo app built with HTML, CSS, and JavaScript (jQuery) that
+            allows users to add, complete, and remove tasks.
+          </p>
+          <a
+            href="https://mdillemuth.github.io/simple-todo-list-jquery/"
+            target="_blank"
+            class="btn btn__primary"
+            >Todo App</a
+          >
+        </div>
+        <div class="work__item">
+          <img src="img/work/jaxsons-legacy.png" alt="jaxsons-legacy" />
+          <p>
+            A pro-bono freelance project. A website built with HTML, CSS, and
+            JavaScript that provides information about a non-profit charity
+            cause dedicated to helping parents who have lost a young child
+          </p>
+          <a
+            href="https://jaxsonslegacy.com"
+            target="_blank"
+            class="btn btn__primary"
+            >Jaxson's Legacy</a
+          >
+        </div>
+        <div class="work__item">
+          <img src="img/work/frontend-mentor.png" alt="frontend-mentor" />
+          <p>
+            A variety of front-end components and built using HTML, CSS, and
+            JavaScript and implemented according to design assets. Features
+            popular frontend patterns common in modern web development.
+          </p>
+          <a
+            href="https://www.frontendmentor.io/profile/mdillemuth"
+            target="_blank"
+            class="btn btn__primary"
+            >Frontend Mentor Projects</a
+          >
         </div>
       </div>
     </main>
