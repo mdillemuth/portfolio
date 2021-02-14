@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
@@ -10,9 +11,15 @@ export default function NavBar() {
         <FontAwesomeIcon className='navbar__hamburger--icon' icon={faBars} />
       </div>
       <ul className='navbar__links__container'>
-        <li className='navbar__link'>Home</li>
-        <li className='navbar__link'>Portfolio</li>
-        <li className='navbar__link'>Contact Me</li>
+        <Link className='navbar__link' to='/'>
+          <li>HOME</li>
+        </Link>
+        <Link className='navbar__link' to='/portfolio'>
+          <li>PORTFOLIO</li>
+        </Link>
+        <Link className='navbar__link' to='/contact'>
+          <li>CONTACT ME</li>
+        </Link>
       </ul>
     </nav>
   );

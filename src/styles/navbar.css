@@ -16,6 +16,15 @@
 .navbar__hamburger--icon {
   font-size: 24px;
 }
+.navbar__link {
+  transition: all 250ms ease-in-out;
+}
+.navbar__link li {
+  letter-spacing: 2px;
+}
+.navbar__link:hover {
+  color: var(--desaturated-cyan);
+}
 .navbar__links__container {
   display: none;
 }
@@ -32,7 +41,7 @@
     display: flex;
   }
   .navbar__link:nth-of-type(2) {
-    margin: 0 42px;
+    margin: 0 40px;
   }
 }
 

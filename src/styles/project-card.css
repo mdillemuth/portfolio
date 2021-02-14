@@ -1,0 +1,32 @@
+.projectCard__container {
+  padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectCard__img {
+  margin-bottom: 32px;
+}
+
+.projectCard__title {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.projectCard__hr {
+  width: 100%;
+  color: var(--gray-dark-blue);
+  margin-bottom: 24px;
+}
+
+.projectCard__text {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.projectCard__btn {
+  align-self: flex-start;
+  margin-bottom: 24px;
+}

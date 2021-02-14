@@ -6,6 +6,8 @@
 @import 'about.css';
 @import 'contact.css';
 @import 'footer.css';
+@import 'project-card.css';
+@import 'portfolio-view.css';
 
 /* Common Variables */
 :root {
@@ -55,4 +57,9 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
