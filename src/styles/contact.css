@@ -38,5 +38,7 @@
 
 /* Desktop */
 @media all and (min-width: 1440px) {
-  /* Todo */
+  .contact__container {
+    padding: 0 165px;
+  }
 }

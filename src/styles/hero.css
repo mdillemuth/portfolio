@@ -46,3 +46,13 @@
 }
 
 /* Desktop */
+@media all and (min-width: 1440px) {
+  .hero__container {
+    padding: 0 165px;
+  }
+  .hero__content {
+    left: 165px;
+    height: 350px;
+    width: 450px;
+  }
+}

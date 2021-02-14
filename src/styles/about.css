@@ -37,7 +37,6 @@
     padding: 0 40px;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 600px;
-    grid-column-gap: 70px;
   }
   .about__content {
     display: flex;
@@ -46,5 +45,15 @@
   }
   .about__hr {
     margin: 0;
+  }
+}
+
+/* Desktop */
+@media all and (min-width: 1440px) {
+  .about__container {
+    padding: 0 165px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 600px;
+    grid-column-gap: 70px;
   }
 }

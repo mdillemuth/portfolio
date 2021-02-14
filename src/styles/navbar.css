@@ -35,3 +35,10 @@
     margin: 0 42px;
   }
 }
+
+/* Desktop */
+@media all and (min-width: 1440px) {
+  .navbar {
+    padding: 0 165px;
+  }
+}
