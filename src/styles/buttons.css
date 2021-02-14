@@ -7,7 +7,7 @@
   outline: none;
   border: none;
   color: #ffffff;
-  transition: 500ms;
+  transition: all 750ms ease-in-out;
   cursor: pointer;
 }
 
