@@ -30,3 +30,21 @@
 .about__btn {
   margin-bottom: 18px;
 }
+
+/* Tablet */
+@media all and (min-width: 768px) {
+  .about__container {
+    padding: 0 40px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 600px;
+    grid-column-gap: 70px;
+  }
+  .about__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .about__hr {
+    margin: 0;
+  }
+}

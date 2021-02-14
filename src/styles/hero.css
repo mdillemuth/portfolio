@@ -8,13 +8,14 @@
 }
 
 .hero__img {
-  background-image: url('../img/hero.jpg');
+  background-image: url('../img/hero.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .hero__content {
+  height: 300px;
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -26,3 +27,22 @@
   font-weight: bold;
   margin-bottom: 32px;
 }
+
+/* Tablet */
+@media all and (min-width: 768px) {
+  .hero__container {
+    padding: 0 40px;
+    grid-template-rows: 600px;
+    position: relative;
+  }
+  .hero__content {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    width: 514px;
+    padding: 56px 56px 0 0;
+    background-color: #ffffff;
+  }
+}
+
+/* Desktop */

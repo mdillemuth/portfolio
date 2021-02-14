@@ -5,7 +5,6 @@
   justify-content: space-between;
   align-items: center;
 }
-
 .navbar__logo {
   background: url('./../img/logo-light.png');
   background-repeat: no-repeat;
@@ -14,7 +13,25 @@
   height: 30px;
   width: 45px;
 }
-
 .navbar__hamburger--icon {
   font-size: 24px;
+}
+.navbar__links__container {
+  display: none;
+}
+
+/* Tablet */
+@media all and (min-width: 768px) {
+  .navbar {
+    padding: 0 40px;
+  }
+  .navbar__hamburger {
+    display: none;
+  }
+  .navbar__links__container {
+    display: flex;
+  }
+  .navbar__link:nth-of-type(2) {
+    margin: 0 42px;
+  }
 }
