@@ -1,0 +1,32 @@
+.about__container {
+  padding: 0 32px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px 1fr;
+}
+
+.about__img {
+  background-image: url('../img/about.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about__hr {
+  margin: 32px 0;
+  color: var(--dark-blue);
+}
+
+.about__title {
+  font-size: 42px;
+  margin-bottom: 24px;
+}
+
+.about__text {
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+
+.about__btn {
+  margin-bottom: 18px;
+}

@@ -1,0 +1,20 @@
+.navbar {
+  padding: 0 32px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo {
+  background: url('./../img/logo-light.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30px;
+  width: 45px;
+}
+
+.navbar__hamburger--icon {
+  font-size: 24px;
+}

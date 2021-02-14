@@ -1,0 +1,30 @@
+.btn {
+  font-weight: bold;
+  font-style: 12px;
+  letter-spacing: 2px;
+  height: 48px;
+  width: 200px;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: var(--dark-blue);
+}
+.btn--primary:hover {
+  background-color: var(--desaturated-cyan);
+}
+
+.btn--secondary {
+  background-color: transparent;
+  color: var(--gray-dark-blue);
+  border: 1px solid var(--gray-dark-blue);
+}
+.btn--secondary:hover {
+  background-color: var(--dark-blue);
+  color: #ffffff;
+  border-color: var(--dark-blue);
+}

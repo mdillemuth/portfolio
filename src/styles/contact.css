@@ -1,0 +1,16 @@
+.contact__container {
+  padding: 0 32px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 310px;
+  grid-template-rows: repeat (2, 1fr);
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  row-gap: 40px;
+}
+
+.contact__title {
+  font-size: 42px;
+  text-align: center;
+}

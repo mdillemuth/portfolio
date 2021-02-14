@@ -1,0 +1,58 @@
+@import-normalize;
+@import 'font.css';
+@import 'buttons.css';
+@import 'navbar.css';
+@import 'hero.css';
+@import 'about.css';
+@import 'contact.css';
+@import 'footer.css';
+
+/* Common Variables */
+:root {
+  /* Primary Colors */
+  --dark-blue: #203a4c;
+  --desaturated-cyan: #5fb4a2;
+  --gray-dark-blue: #33323d;
+
+  /* Secondary Colors */
+  --bg-color-light: #fafafa;
+  --text-field: #eaeaeb;
+  --bright-red: #f43030;
+}
+
+/* Resets & General */
+*,
+*::before,
+*::after {
+  font-family: Roboto, sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--bg-color-light);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div {
+  color: var(--gray-dark-blue);
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

@@ -1,0 +1,28 @@
+.hero__container {
+  padding: 0 32px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 300px);
+  row-gap: 24px;
+  margin-bottom: 96px;
+}
+
+.hero__img {
+  background-image: url('../img/hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__content {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero__title {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
