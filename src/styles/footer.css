@@ -18,10 +18,10 @@
 .footer__logo {
   background: url('./../img/logo-dark.png');
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
-  height: 30px;
-  width: 45px;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
   margin: 0;
   margin-bottom: 40px;
 }

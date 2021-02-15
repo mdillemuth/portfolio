@@ -9,9 +9,9 @@
   background: url('./../img/logo-light.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  height: 30px;
-  width: 45px;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
 }
 .navbar__hamburger--icon {
   font-size: 24px;
