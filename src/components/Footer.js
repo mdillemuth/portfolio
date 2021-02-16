@@ -28,7 +28,7 @@ export default function Footer() {
               target='_blank'
             >
               <FontAwesomeIcon
-                className='footer__icons__item--fontawesome'
+                className='footer__fontawesome'
                 icon={faGithub}
               />
             </a>
@@ -40,7 +40,7 @@ export default function Footer() {
               target='_blank'
             >
               <FontAwesomeIcon
-                className='footer__icons__item--fontawesome'
+                className='footer__fontawesome'
                 icon={faEnvelope}
               />
             </a>
@@ -52,7 +52,7 @@ export default function Footer() {
               rel='noreferrer'
             >
               <FontAwesomeIcon
-                className='footer__icons__item--fontawesome'
+                className='footer__fontawesome'
                 icon={faLinkedin}
               />
             </a>

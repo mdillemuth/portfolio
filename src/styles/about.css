@@ -35,11 +35,13 @@
     grid-column-gap: 70px;
     grid-template-rows: 600px;
   }
+
   .about__content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
+
   .about__hr {
     margin: 0;
   }

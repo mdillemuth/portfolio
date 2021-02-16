@@ -8,7 +8,7 @@
 }
 
 .hero__img {
-  background-image: url('../img/hero-1.png');
+  background-image: url('../img/hero.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,6 +25,7 @@
     grid-template-rows: 600px;
     position: relative;
   }
+
   .hero__content {
     position: absolute;
     bottom: 0;
@@ -40,6 +41,7 @@
   .hero__container {
     margin-top: 54px;
   }
+
   .hero__content {
     width: 450px;
   }

@@ -7,7 +7,7 @@
   outline: none;
   border: none;
   color: #ffffff;
-  transition: all 750ms ease-out;
+  transition: all 500ms ease-out;
   cursor: pointer;
 }
 
@@ -15,6 +15,7 @@
 .btn--primary {
   background-color: var(--dark-blue);
 }
+
 .btn--primary:hover {
   background-color: var(--desaturated-cyan);
 }
@@ -24,19 +25,22 @@
   color: #ffffff;
   display: inline-block;
   position: relative;
-  transition: all 750ms ease-out;
+  transition: all 500ms ease-out;
 }
+
 .btn .btn__span--primary:after {
   content: '\00BB';
   position: absolute;
   opacity: 0;
   bottom: 0px;
   right: -20px;
-  transition: all 750ms ease-out;
+  transition: all 500ms ease-out;
 }
+
 .btn:hover .btn__span--primary {
   padding-right: 25px;
 }
+
 .btn:hover .btn__span--primary:after {
   opacity: 1;
   right: 0;
@@ -48,6 +52,7 @@
   color: var(--gray-dark-blue);
   border: 1px solid var(--gray-dark-blue);
 }
+
 .btn--secondary:hover {
   background-color: var(--gray-dark-blue);
   color: #ffffff;
@@ -59,8 +64,9 @@
   color: var(--gray-dark-blue);
   display: inline-block;
   position: relative;
-  transition: all 750ms ease-out;
+  transition: all 500ms ease-out;
 }
+
 .btn .btn__span--secondary:after {
   color: #ffffff;
   content: '\00BB';
@@ -68,12 +74,14 @@
   opacity: 0;
   bottom: 0px;
   right: -20px;
-  transition: all 750ms ease-out;
+  transition: all 500ms ease-out;
 }
+
 .btn:hover .btn__span--secondary {
   color: white;
   padding-right: 25px;
 }
+
 .btn:hover .btn__span--secondary:after {
   opacity: 1;
   right: 0;

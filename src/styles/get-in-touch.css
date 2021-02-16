@@ -12,16 +12,6 @@
   margin-bottom: 24px;
 }
 
-.getInTouch__img {
-  background-image: url('../img/about-matt.JPG');
-  width: 150px;
-  height: 150px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 24px;
-}
-
 .getInTouch__text {
   margin-bottom: 24px;
 }
@@ -33,6 +23,15 @@
 
 .getInTouch__btn {
   margin-bottom: 24px;
+}
+
+.getInTouch__fontawesome {
+  font-size: 24px;
+  transition: all 400ms ease-out;
+}
+
+.getInTouch__fontawesome:hover {
+  color: var(--desaturated-cyan);
 }
 
 .getInTouch__icons__item:nth-of-type(2) {
@@ -56,6 +55,7 @@
     max-width: 1111px;
     margin-top: 94px;
   }
+
   .getInTouch__grid {
     display: grid;
     grid-template-columns: 350px 635px;

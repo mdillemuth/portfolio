@@ -4,12 +4,14 @@
   margin-bottom: 72px;
   grid-template-rows: 300px;
 }
+
 .portfolioCard__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 }
+
 .portfolioCard__img {
   margin-bottom: 32px;
   width: 100%;
@@ -22,18 +24,22 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .portfolioCard__title {
   text-align: left;
   margin-bottom: 24px;
 }
+
 .portfolioCard__hr {
   width: 100%;
   margin-bottom: 24px;
 }
+
 .portfolioCard__text {
   text-align: left;
   margin-bottom: 24px;
 }
+
 .portfolioCard__btn {
   align-self: flex-start;
   margin-bottom: 24px;
@@ -49,12 +55,15 @@
     align-items: center;
     margin-bottom: 80px;
   }
+
   .portfolioCard__container--even {
     grid-template-columns: 281px 339px;
   }
+
   .portfolioCard__content--even {
     grid-area: left;
   }
+
   .portfolioCard__img {
     max-height: 90%;
   }
@@ -68,6 +77,7 @@
     grid-template-rows: 520px;
     margin-right: 130px;
   }
+
   .portfolioCard__container--even {
     grid-template-columns: 350px 540px;
     margin-left: 130px;
