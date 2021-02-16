@@ -1,13 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function ContactFooter() {
   return (
     <div className='contactFooter__container'>
-      <h3 className='contactFooter__title'>
+      <h2 className='contactFooter__title'>
         Interested in doing a project together?
-      </h3>
+      </h2>
       <hr className='contactFooter__hr' />
-      <button className='btn btn--secondary'>CONTACT ME</button>
+      <Link to='/contact'>
+        <button className='btn btn--secondary'>CONTACT ME</button>
+      </Link>
     </div>
   );
 }

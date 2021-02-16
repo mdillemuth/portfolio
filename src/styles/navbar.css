@@ -12,6 +12,9 @@
   width: 40px;
   height: 40px;
 }
+.navbar__logo:hover {
+  cursor: pointer;
+}
 .navbar__hamburger--icon {
   font-size: 24px;
 }

@@ -8,13 +8,6 @@
 /* Tablet */
 @media all and (min-width: 768px) {
   .portfolio__container {
-    margin-top: 80px;
-  }
-}
-
-/* Desktop */
-@media all and (min-width: 1440px) {
-  .portfolio__container {
-    margin-top: 80px;
+    margin-top: 94px;
   }
 }

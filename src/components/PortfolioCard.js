@@ -21,10 +21,13 @@ export default function PortfolioCard(props) {
 
   return (
     <div className={renderCardOrientation(id)}>
-      <img className='portfolioCard__img' src={img} alt={title} />
+      <div
+        style={{ backgroundImage: `url(${img})` }}
+        className='portfolioCard__img'
+      />
       <div className={renderContentOrientation(id)}>
         <hr className='portfolioCard__hr' />
-        <h3 className='portfolioCard__title'>{title}</h3>
+        <h2 className='portfolioCard__title'>{title}</h2>
         <p className='portfolioCard__text'>{description}</p>
         <button className='btn btn--secondary portfolioCard__btn'>
           VIEW PROJECT

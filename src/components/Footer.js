@@ -22,22 +22,40 @@ export default function Footer() {
         </ul>
         <ul className='footer__icons'>
           <li className='footer__icons__item'>
-            <FontAwesomeIcon
-              className='footer__icons__item--fontawesome'
-              icon={faGithub}
-            />
+            <a
+              href='https://github.com/mdillemuth'
+              rel='noreferrer'
+              target='_blank'
+            >
+              <FontAwesomeIcon
+                className='footer__icons__item--fontawesome'
+                icon={faGithub}
+              />
+            </a>
           </li>
           <li className='footer__icons__item'>
-            <FontAwesomeIcon
-              className='footer__icons__item--fontawesome'
-              icon={faEnvelope}
-            />
+            <a
+              href='mailto:mattdillemuth@gmail.com'
+              rel='noreferrer'
+              target='_blank'
+            >
+              <FontAwesomeIcon
+                className='footer__icons__item--fontawesome'
+                icon={faEnvelope}
+              />
+            </a>
           </li>
           <li className='footer__icons__item'>
-            <FontAwesomeIcon
-              className='footer__icons__item--fontawesome'
-              icon={faLinkedin}
-            />
+            <a
+              href='https://www.linkedin.com/in/mdillemuth/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <FontAwesomeIcon
+                className='footer__icons__item--fontawesome'
+                icon={faLinkedin}
+              />
+            </a>
           </li>
         </ul>
       </div>

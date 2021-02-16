@@ -13,11 +13,9 @@
 
 .about__hr {
   margin: 32px 0;
-  color: var(--dark-blue);
 }
 
 .about__title {
-  font-size: 42px;
   margin-bottom: 24px;
 }
 

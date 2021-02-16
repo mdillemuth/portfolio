@@ -6,7 +6,8 @@ import Navbar from './Navbar';
 import Hero from './Hero';
 import About from './About';
 import Portfolio from './Portfolio';
-import Contact from './Contact';
+import GetInTouch from './GetInTouch';
+import ContactForm from './ContactForm';
 import ContactFooter from './ContactFooter';
 import Footer from './Footer';
 
@@ -34,7 +35,8 @@ export default function App() {
             render={() => {
               return (
                 <div className='Contact'>
-                  <Contact />
+                  <GetInTouch />
+                  <ContactForm />
                 </div>
               );
             }}

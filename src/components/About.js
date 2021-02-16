@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function About() {
   return (
@@ -17,9 +18,11 @@ export default function About() {
           computer, I'm likely at the gym exercising or practicing Muay Thai.
           I'd love for you to check out my work.
         </p>
-        <button className='btn btn--secondary about__btn'>
-          GO TO PORTFOLIO
-        </button>
+        <Link to='/portfolio'>
+          <button className='btn btn--secondary about__btn'>
+            GO TO PORTFOLIO
+          </button>
+        </Link>
         <hr className='about__hr' />
       </div>
     </div>

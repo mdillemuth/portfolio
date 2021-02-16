@@ -4,13 +4,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import 'about.css';
 @import 'buttons.css';
-@import 'contact.css';
-@import 'contactFooter.css';
+@import 'contact-footer.css';
+@import 'contact-form.css';
 @import 'footer.css';
+@import 'get-in-touch.css';
 @import 'hero.css';
 @import 'navbar.css';
 @import 'portfolio-card.css';
 @import 'portfolio.css';
+
+/* Resets */
 
 :root {
   --dark-blue: #203a4c;
@@ -27,6 +30,8 @@
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
 }
+
+/* Common Styles */
 
 html {
   font-size: 16px;
@@ -61,7 +66,21 @@ div {
   padding: 0;
 }
 
+h1,
+h2 {
+  line-height: 42px;
+  font-size: 40px;
+  letter-spacing: -0.36px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 42px;
+}
+
 p {
+  font-size: 16px;
   line-height: 30px;
 }
 
@@ -74,6 +93,10 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+hr {
+  color: #979797;
 }
 
 /* App Container */
