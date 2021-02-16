@@ -30,7 +30,6 @@
     bottom: 0;
     left: 0px;
     width: 514px;
-    height: 278px;
     padding: 56px 56px 0 0;
     background-color: #ffffff;
   }
@@ -42,7 +41,6 @@
     margin-top: 54px;
   }
   .hero__content {
-    height: 350px;
     width: 450px;
   }
 }

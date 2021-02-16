@@ -48,7 +48,7 @@ export default function ContactForm() {
           type='submit'
           value='Send message'
         >
-          SEND MESSAGE
+          <span className='btn__span--primary'>SEND MESSAGE</span>
         </button>
       </form>
     </div>

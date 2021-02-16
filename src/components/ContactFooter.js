@@ -9,7 +9,9 @@ export default function ContactFooter() {
       </h2>
       <hr className='contactFooter__hr' />
       <Link to='/contact'>
-        <button className='btn btn--secondary'>CONTACT ME</button>
+        <button className='btn btn--secondary about__btn'>
+          <span className='btn__span--secondary'>CONTACT ME</span>
+        </button>
       </Link>
     </div>
   );

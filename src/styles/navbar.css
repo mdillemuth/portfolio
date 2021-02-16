@@ -5,7 +5,7 @@
   align-items: center;
 }
 .navbar__logo {
-  background: url('./../img/logo-light.png');
+  background: url('./../img/logo-light.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -19,11 +19,26 @@
   font-size: 24px;
 }
 .navbar__link {
-  transition: all 250ms ease-in-out;
+  transition: all 750ms ease-in-out;
 }
 .navbar__link li {
   letter-spacing: 2px;
 }
+.navbar__link li:after {
+  content: '';
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+  height: 1px;
+  width: 0px;
+  background: transparent;
+  transition: width 750ms ease, background-color 750ms ease;
+}
+.navbar__link li:hover:after {
+  width: 100%;
+  background: var(--desaturated-cyan);
+}
+
 .navbar__link:hover {
   color: var(--desaturated-cyan);
 }

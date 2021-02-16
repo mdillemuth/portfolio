@@ -20,7 +20,7 @@ export default function About() {
         </p>
         <Link to='/portfolio'>
           <button className='btn btn--secondary about__btn'>
-            GO TO PORTFOLIO
+            <span className='btn__span--secondary'>GO TO PORTFOLIO</span>
           </button>
         </Link>
         <hr className='about__hr' />

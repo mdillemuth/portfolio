@@ -12,6 +12,16 @@
   margin-bottom: 24px;
 }
 
+.getInTouch__img {
+  background-image: url('../img/about-matt.JPG');
+  width: 150px;
+  height: 150px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 24px;
+}
+
 .getInTouch__text {
   margin-bottom: 24px;
 }

@@ -20,7 +20,7 @@
   align-items: center;
 }
 .footer__logo {
-  background: url('./../img/logo-dark.png');
+  background: url('./../img/logo-dark.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

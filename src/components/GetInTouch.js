@@ -22,7 +22,7 @@ export default function GetInTouch() {
           </p>
           <a href={pdf} target='_blank' rel='noreferrer'>
             <button className='btn btn--secondary getInTouch__btn'>
-              RESUME / CV
+              <span className='btn__span--secondary'>RESUME / CV</span>
             </button>
           </a>{' '}
           <ul className='getInTouch__icons'>

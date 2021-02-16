@@ -8,7 +8,9 @@ export default function Hero() {
         <h1 className='hero__title'>
           Hey, I'm Matt Dillemuth, and I'm a full-stack developer
         </h1>
-        <button className='btn btn--primary'>ABOUT ME</button>
+        <button className='btn btn--primary'>
+          <span className='btn__span--primary'>ABOUT ME</span>
+        </button>
       </div>
     </div>
   );

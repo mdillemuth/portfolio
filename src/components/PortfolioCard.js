@@ -30,7 +30,7 @@ export default function PortfolioCard(props) {
         <h2 className='portfolioCard__title'>{title}</h2>
         <p className='portfolioCard__text'>{description}</p>
         <button className='btn btn--secondary portfolioCard__btn'>
-          VIEW PROJECT
+          <span className='btn__span--secondary'>VIEW PROJECT</span>
         </button>
         <hr className='portfolioCard__hr' />
       </div>
