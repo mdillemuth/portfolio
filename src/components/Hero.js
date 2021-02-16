@@ -6,7 +6,7 @@ export default function Hero() {
       <div className='hero__img'></div>
       <div className='hero__content'>
         <h1 className='hero__title'>
-          Hey, I'm Matt Dillemuth and I'm a full-stack developer
+          Hey, I'm Matt Dillemuth, and I'm a full-stack developer
         </h1>
         <button className='btn btn--primary'>ABOUT ME</button>
       </div>

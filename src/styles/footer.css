@@ -1,7 +1,11 @@
 .footer__container {
-  padding: 10px 0;
-  height: 350px;
   background-color: var(--gray-dark-blue);
+}
+
+.footer__content {
+  max-width: 1750px;
+  margin: 0 auto;
+  height: 350px;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -39,13 +43,13 @@
   font-size: 24px;
 }
 .footer__icons__item:nth-of-type(2) {
-  margin: 0 24px;
+  margin: 0 15px;
 }
 
 /* Tablet */
 @media all and (min-width: 768px) {
-  .footer__container {
-    padding: 0 40px;
+  .footer__content {
+    padding: 0 80px;
     height: 80px;
     flex-direction: row;
     justify-content: space-between;
@@ -65,7 +69,7 @@
 
 /* Desktop */
 @media all and (min-width: 1440px) {
-  .footer__container {
+  .footer__content {
     padding: 0 165px;
   }
 }

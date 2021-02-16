@@ -1,23 +1,59 @@
 import React from 'react';
-import { Route, Switch, Redirect, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 // Components
 import Navbar from './Navbar';
-import HomeView from './home-view/HomeView';
-import ContactView from './contact-view/ContactView';
-import PortfolioView from './portfolio-view/PortfolioView';
+import Hero from './Hero';
+import About from './About';
+import Portfolio from './Portfolio';
+import Contact from './Contact';
+import ContactFooter from './ContactFooter';
 import Footer from './Footer';
+
+// Components
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Switch>
-        <Route path='/contact' component={ContactView} />
-        <Route path='/portfolio' component={PortfolioView} />
-        <Route path='/' component={HomeView} />
-      </Switch>
-      <Footer />
-    </BrowserRouter>
+    <div className='App'>
+      <BrowserRouter>
+        <Navbar />
+        <Switch>
+          <Route
+            path='/portfolio'
+            render={() => {
+              return (
+                <div className='Portfolio'>
+                  <Portfolio />
+                  <ContactFooter />
+                </div>
+              );
+            }}
+          />
+          <Route
+            path='/contact'
+            render={() => {
+              return (
+                <div className='Contact'>
+                  <Contact />
+                </div>
+              );
+            }}
+          />
+          <Route
+            path='/'
+            render={() => {
+              return (
+                <div className='Home'>
+                  <Hero />
+                  <About />
+                  <ContactFooter />
+                </div>
+              );
+            }}
+          />
+        </Switch>
+        <Footer />
+      </BrowserRouter>
+    </div>
   );
 }

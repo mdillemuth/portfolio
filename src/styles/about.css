@@ -1,12 +1,11 @@
 .about__container {
-  padding: 0 32px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 300px 1fr;
 }
 
 .about__img {
-  background-image: url('../img/about-matt.JPG');
+  background-image: url('../img/about.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -34,8 +33,7 @@
 /* Tablet */
 @media all and (min-width: 768px) {
   .about__container {
-    padding: 0 40px;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.6fr 2fr;
     grid-column-gap: 70px;
     grid-template-rows: 600px;
   }
@@ -52,8 +50,8 @@
 /* Desktop */
 @media all and (min-width: 1440px) {
   .about__container {
-    padding: 0 165px;
-    grid-template-columns: repeat(2, 1fr);
+    /* max-width: 1200px; */
+    grid-template-columns: 1fr 400px;
     grid-column-gap: 125px;
     grid-template-rows: 600px;
     grid-column-gap: 70px;

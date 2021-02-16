@@ -1,5 +1,4 @@
 .navbar {
-  padding: 0 32px;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -31,9 +30,6 @@
 
 /* Tablet */
 @media all and (min-width: 768px) {
-  .navbar {
-    padding: 0 40px;
-  }
   .navbar__hamburger {
     display: none;
   }
@@ -42,12 +38,5 @@
   }
   .navbar__link:nth-of-type(2) {
     margin: 0 40px;
-  }
-}
-
-/* Desktop */
-@media all and (min-width: 1440px) {
-  .navbar {
-    padding: 0 165px;
   }
 }
