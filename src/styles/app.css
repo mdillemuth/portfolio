@@ -96,7 +96,9 @@ a {
 }
 
 hr {
-  color: #979797;
+  background-color: #979797;
+  height: 1px;
+  border: none;
 }
 
 /* App Container */
