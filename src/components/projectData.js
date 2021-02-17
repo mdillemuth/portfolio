@@ -1,6 +1,6 @@
 export const projectData = [
   {
-    id: 1,
+    id: 0,
     projectId: 'chat-app',
     title: 'Chat App',
     img1: '/img/chat-1.png',
@@ -12,7 +12,7 @@ export const projectData = [
     img3: '/img/chat-1.png',
   },
   {
-    id: 2,
+    id: 1,
     projectId: 'meet-app',
     title: 'Meet App',
     img1: '/img/meet-1.png',
@@ -24,8 +24,8 @@ export const projectData = [
     img3: '/img/chat-1.png',
   },
   {
-    id: 3,
-    projectId: 'myFightFlix',
+    id: 2,
+    projectId: 'myFightFlix-app',
     title: 'myFightFlix',
     img1: '/img/myFightFlix-1.png',
     description:
@@ -37,7 +37,7 @@ export const projectData = [
   },
 
   {
-    id: 4,
+    id: 3,
     projectId: 'pokedex-app',
     title: 'Pokedex App',
     img1: '/img/pokedex-1.png',

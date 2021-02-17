@@ -1,12 +1,11 @@
 import React from 'react';
 import PortfolioCard from './PortfolioCard';
-import { projectData } from './projectData';
 
-export default function Portfolio() {
+export default function Portfolio({ projects }) {
   return (
     <>
       <div className='portfolio__container'>
-        {projectData.map((project) => (
+        {projects.map((project) => (
           <PortfolioCard key={project.id} {...project} />
         ))}
       </div>

@@ -5,16 +5,24 @@ import {
   faChevronLeft,
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
-// import { projectData } from './projectData';
 
-// const project = projectData[0];
-
-export default function ProjectCard(props) {
-  const { projects, match } = props;
-
+export default function ProjectCard({ match, projects }) {
   const project = projects.find(
-    (project) => project.url === match.params.projectId
+    (project) => project.projectId === match.params.projectId
   );
+
+  const findPrevProject = () => {
+    const index = project.id;
+    return index === 0 ? projects[projects.length - 1] : projects[index - 1];
+  };
+
+  const findNextProject = () => {
+    const index = project.id;
+    return index === projects.length - 1 ? projects[0] : projects[index + 1];
+  };
+
+  const prevProject = findPrevProject();
+  const nextProject = findNextProject();
 
   return (
     <article className='projectCard__container'>
@@ -64,31 +72,37 @@ export default function ProjectCard(props) {
       <section className='projectCard__menu'>
         <div className='projectCard__menu__content'>
           <div className='projectCard__menu__content--left'>
-            <FontAwesomeIcon
-              className='projectCard__menu__content--left--symbol'
-              icon={faChevronLeft}
-            />
-            <div>
-              <h3 className='projectCard__menu__content--left--title'>Left</h3>
-              <div className='projectCard__menu__content--left--label'>
-                Previous Project
+            <Link to={`/portfolio/${prevProject.projectId}`}>
+              <FontAwesomeIcon
+                className='projectCard__menu__content--left--symbol'
+                icon={faChevronLeft}
+              />
+              <div>
+                <h3 className='projectCard__menu__content--left--title'>
+                  {prevProject.title}
+                </h3>
+                <div className='projectCard__menu__content--left--label'>
+                  Previous Project
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
           <div className='projectCard__menu__content--middle'></div>
           <div className='projectCard__menu__content--right'>
-            <FontAwesomeIcon
-              className='projectCard__menu__content--right--symbol'
-              icon={faChevronRight}
-            />
-            <div>
-              <h3 className='projectCard__menu__content--right--title'>
-                Right
-              </h3>
-              <div className='projectCard__menu__content--right--label'>
-                Next Project
+            <Link to={`/portfolio/${nextProject.projectId}`}>
+              <FontAwesomeIcon
+                className='projectCard__menu__content--right--symbol'
+                icon={faChevronRight}
+              />
+              <div>
+                <h3 className='projectCard__menu__content--right--title'>
+                  {nextProject.title}
+                </h3>
+                <div className='projectCard__menu__content--right--label'>
+                  Next Project
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </section>

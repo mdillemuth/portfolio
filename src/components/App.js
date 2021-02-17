@@ -23,10 +23,10 @@ export default function App() {
         <Switch>
           <Route
             path='/portfolio/:projectId'
-            render={() => {
+            render={(props) => {
               return (
                 <div>
-                  <ProjectCard projects={projectData} />
+                  <ProjectCard {...props} projects={projectData} />
                   <ContactFooter />
                 </div>
               );
@@ -37,7 +37,7 @@ export default function App() {
             render={() => {
               return (
                 <div className='Portfolio'>
-                  <Portfolio />
+                  <Portfolio projects={projectData} />
                   <ContactFooter />
                 </div>
               );
