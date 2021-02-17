@@ -1,56 +1,98 @@
 import React from 'react';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
 
 export default function ContactForm() {
   return (
     <div className='contactForm__container'>
       <h2 className='contactForm__title'>Contact Me</h2>
-      <form
-        className='contactForm__form'
-        name='contact'
-        method='POST'
-        netlify
-        id='contact-form'
+      <Formik
+        initialValues={{
+          name: '',
+          email: '',
+          message: '',
+        }}
+        onSubmit={(values, actions) => {
+          fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: encodeURI({ 'form-name': 'contact-form', ...values }),
+          })
+            .then(() => {
+              alert('Success');
+              actions.resetForm();
+            })
+            .catch(() => {
+              alert('Error');
+            })
+            .finally(() => actions.setSubmitting(false));
+        }}
+        validate={(values) => {
+          const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+          const errors = {};
+          if (!values.name) {
+            errors.name = 'Please provide your name';
+          }
+          if (!values.email || !emailRegex.test(values.email)) {
+            errors.email = 'Please enter a valid email address';
+          }
+          if (!values.message) {
+            errors.message = 'Please provide a message';
+          }
+
+          return errors;
+        }}
       >
-        <label for='name' class='contactForm__label'>
-          Name
-        </label>
-        <input
-          name='name'
-          class='contactForm__input'
-          type='text'
-          id='name'
-          required
-          placeholder='John Appleseed'
-        />
-        <label class='contactForm__label' for='email'>
-          Email Address
-        </label>
-        <input
-          class='contactForm__input'
-          type='email'
-          id='email'
-          required
-          name='email'
-          placeholder='email@example.com'
-        />
-        <label class='contactForm__label' for='message'>
-          Message
-        </label>
-        <textarea
-          name='message'
-          class='contactForm__input contactForm__textarea'
-          required
-          id='message'
-          placeholder='Enter your message'
-        ></textarea>
-        <button
-          class='btn btn--primary btn--contact-form'
-          type='submit'
-          value='Send message'
-        >
-          <span className='btn__span--primary'>SEND MESSAGE</span>
-        </button>
-      </form>
+        {() => (
+          <Form name='contact-form' data-netlify={true}>
+            <div className='contactForm__group'>
+              <label className='contactForm__label' htmlFor='name'>
+                Name
+              </label>
+              <Field
+                placeholder='John Appleseed'
+                name='name'
+                className='contactForm__input'
+              />
+              <div className='contactForm__error'>
+                <ErrorMessage name='name' />
+              </div>
+            </div>
+
+            <div className='contactForm__group'>
+              <label className='contactForm__label' htmlFor='email'>
+                Email
+              </label>
+              <Field
+                placeholder='example@email.com'
+                name='email'
+                className='contactForm__input'
+              />
+              <div className='contactForm__error'>
+                <ErrorMessage name='email' />
+              </div>
+            </div>
+
+            <div className='contactForm__group'>
+              <label className='contactForm__label' htmlFor='message'>
+                Message
+              </label>
+              <Field
+                placeholder='How can I help?'
+                name='message'
+                component='textarea'
+                className='contactForm__input contactForm__textarea'
+              />
+              <div className='contactForm__error'>
+                <ErrorMessage name='message' />
+              </div>
+            </div>
+
+            <button className='btn btn--primary' type='submit'>
+              Send
+            </button>
+          </Form>
+        )}
+      </Formik>
     </div>
   );
 }
