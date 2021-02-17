@@ -30,13 +30,13 @@ export default function ContactForm() {
           const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
           const errors = {};
           if (!values.name) {
-            errors.name = 'Please provide your name';
+            errors.name = 'Field is required';
           }
           if (!values.email || !emailRegex.test(values.email)) {
-            errors.email = 'Please enter a valid email address';
+            errors.email = 'Field is required';
           }
           if (!values.message) {
-            errors.message = 'Please provide a message';
+            errors.message = 'Field is required';
           }
 
           return errors;
@@ -88,7 +88,7 @@ export default function ContactForm() {
             </div>
 
             <button className='btn btn--primary' type='submit'>
-              Send
+              <span className='btn__span--primary'>SEND</span>
             </button>
           </Form>
         )}

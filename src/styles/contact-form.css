@@ -27,6 +27,7 @@
   background-color: var(--text-field);
   padding: 9px 16px;
   height: 48px;
+  font-size: 14px;
   outline: none;
   border: 1px solid var(--text-field);
   transition: all 300ms ease-in-out;
@@ -41,7 +42,7 @@
 }
 
 .contactForm__input::placeholder {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 30px;
   font-weight: normal;
   opacity: 0.4;
@@ -55,10 +56,11 @@
 }
 
 .contactForm__error {
+  height: 5px;
   color: var(--error-red);
   font-weight: bold;
   font-style: italic;
-  font-size: 10px;
+  font-size: 11px;
   margin-top: 4px;
   margin-bottom: 0;
 }

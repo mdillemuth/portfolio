@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function PortfolioCard(props) {
-  const { id, title, img, description } = props;
+  const { id, projectId, title, img1, description } = props;
 
   // The whole card
   const renderCardOrientation = (id) => {
@@ -22,16 +23,18 @@ export default function PortfolioCard(props) {
   return (
     <div className={renderCardOrientation(id)}>
       <div
-        style={{ backgroundImage: `url(${img})` }}
+        style={{ backgroundImage: `url(${img1})` }}
         className='portfolioCard__img'
       />
       <div className={renderContentOrientation(id)}>
         <hr className='portfolioCard__hr' />
         <h2 className='portfolioCard__title'>{title}</h2>
         <p className='portfolioCard__text'>{description}</p>
-        <button className='btn btn--secondary portfolioCard__btn'>
-          <span className='btn__span--secondary'>VIEW PROJECT</span>
-        </button>
+        <Link to={`/portfolio/${projectId}`}>
+          <button className='btn btn--secondary portfolioCard__btn'>
+            <span className='btn__span--secondary'>VIEW PROJECT</span>
+          </button>
+        </Link>
         <hr className='portfolioCard__hr' />
       </div>
     </div>

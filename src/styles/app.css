@@ -12,6 +12,7 @@
 @import 'navbar.css';
 @import 'portfolio-card.css';
 @import 'portfolio.css';
+@import 'project-card.css';
 
 /* Resets */
 
@@ -79,6 +80,8 @@ h3 {
   font-family: 'Roboto Slab', serif;
   font-size: 32px;
   line-height: 42px;
+  letter-spacing: -0.29px;
+  font-weight: normal;
 }
 
 p {

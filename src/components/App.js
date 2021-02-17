@@ -10,6 +10,8 @@ import GetInTouch from './GetInTouch';
 import ContactForm from './ContactForm';
 import ContactFooter from './ContactFooter';
 import Footer from './Footer';
+import ProjectCard from './ProjectCard';
+import { projectData } from './projectData';
 
 // Components
 
@@ -19,6 +21,17 @@ export default function App() {
       <BrowserRouter>
         <Navbar />
         <Switch>
+          <Route
+            path='/portfolio/:projectId'
+            render={() => {
+              return (
+                <div>
+                  <ProjectCard projects={projectData} />
+                  <ContactFooter />
+                </div>
+              );
+            }}
+          />
           <Route
             path='/portfolio'
             render={() => {
