@@ -14,8 +14,10 @@
 @import 'portfolio.css';
 @import 'project-card.css';
 
-/* Resets */
+/* React Transition Group Animations */
+@import 'react-transition-group.css';
 
+/* Resets */
 :root {
   --dark-blue: #203a4c;
   --desaturated-cyan: #5fb4a2;

@@ -6,7 +6,7 @@ import pdf from '../dillemuth-matt-resume.pdf';
 
 export default function GetInTouch() {
   return (
-    <div className='getInTouch__container'>
+    <div id='get-in-touch' className='getInTouch__container'>
       <hr className='getInTouch__hr' />
       <div className='getInTouch__grid'>
         <h2 className='getInTouch__title'>Get in Touch</h2>

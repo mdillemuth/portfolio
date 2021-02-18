@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 export default function About() {
   return (
-    <div className='about__container'>
+    <div id='about' className='about__container'>
       <div className='about__img'></div>
       <div className='about__content'>
         <hr className='about__hr' />
@@ -18,11 +18,11 @@ export default function About() {
           computer, I'm likely at the gym exercising or practicing Muay Thai.
           I'd love for you to check out my work.
         </p>
-        <Link to='/portfolio'>
+        <HashLink to='/portfolio#portfolio' smooth>
           <button className='btn btn--secondary about__btn'>
             <span className='btn__span--secondary'>GO TO PORTFOLIO</span>
           </button>
-        </Link>
+        </HashLink>
         <hr className='about__hr' />
       </div>
     </div>

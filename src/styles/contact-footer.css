@@ -19,6 +19,7 @@
 /* Tablet */
 @media all and (min-width: 768px) {
   .contactFooter__container {
+    height: 234px;
     flex-direction: row;
     justify-content: space-between;
   }

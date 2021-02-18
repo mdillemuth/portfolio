@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faChevronLeft,
@@ -25,7 +25,7 @@ export default function ProjectCard({ match, projects }) {
   const nextProject = findNextProject();
 
   return (
-    <article className='projectCard__container'>
+    <article id='project' className='projectCard__container'>
       <img
         className='projectCard__img projectCard__img--overview'
         src={project.img1}
@@ -45,7 +45,9 @@ export default function ProjectCard({ match, projects }) {
               </div>
               <div className='projectCard__categories'>HTML / CSS / JS</div>
             </div>
-            <button className='btn btn--secondary'>VISIT WEBSITE</button>
+            <button className='btn btn--secondary'>
+              <span className='btn__span--secondary'>VISIT WEBSITE</span>
+            </button>
           </section>
           <hr className='projectCard__hr projectCard__hr--bottom' />
         </div>
@@ -72,7 +74,7 @@ export default function ProjectCard({ match, projects }) {
       <section className='projectCard__menu'>
         <div className='projectCard__menu__content'>
           <div className='projectCard__menu__content--left'>
-            <Link to={`/portfolio/${prevProject.projectId}`}>
+            <HashLink to={`/portfolio/${prevProject.projectId}#project`} smooth>
               <FontAwesomeIcon
                 className='projectCard__menu__content--left--symbol'
                 icon={faChevronLeft}
@@ -85,11 +87,11 @@ export default function ProjectCard({ match, projects }) {
                   Previous Project
                 </div>
               </div>
-            </Link>
+            </HashLink>
           </div>
           <div className='projectCard__menu__content--middle'></div>
           <div className='projectCard__menu__content--right'>
-            <Link to={`/portfolio/${nextProject.projectId}`}>
+            <HashLink to={`/portfolio/${nextProject.projectId}#project`} smooth>
               <FontAwesomeIcon
                 className='projectCard__menu__content--right--symbol'
                 icon={faChevronRight}
@@ -102,7 +104,7 @@ export default function ProjectCard({ match, projects }) {
                   Next Project
                 </div>
               </div>
-            </Link>
+            </HashLink>
           </div>
         </div>
       </section>

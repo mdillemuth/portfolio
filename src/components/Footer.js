@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 export default function Footer() {
   return (
@@ -11,13 +11,19 @@ export default function Footer() {
         <ul className='footer__nav'>
           <li className='footer__logo'></li>
           <li className='footer__nav__item'>
-            <Link to='/'>HOME</Link>
+            <NavLink exact to='/#nav' activeClassName='active' smooth>
+              HOME
+            </NavLink>
           </li>
           <li className='footer__nav__item'>
-            <Link to='/portfolio'>PORTFOLIO</Link>
+            <NavLink to='/portfolio#portfolio' activeClassName='active' smooth>
+              PORTFOLIO
+            </NavLink>
           </li>
           <li className='footer__nav__item'>
-            <Link to='/contact'>CONTACT</Link>
+            <NavLink to='/contact#get-in-touch' activeClassName='active' smooth>
+              CONTACT
+            </NavLink>
           </li>
         </ul>
         <ul className='footer__icons'>

@@ -54,6 +54,10 @@
   display: none;
 }
 
+.navbar__link.active {
+  color: var(--desaturated-cyan);
+}
+
 /* Tablet */
 @media all and (min-width: 768px) {
   .navbar__hamburger {

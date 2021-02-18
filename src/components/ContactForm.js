@@ -3,7 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 
 export default function ContactForm() {
   return (
-    <div className='contactForm__container'>
+    <div id='contact' className='contactForm__container'>
       <h2 className='contactForm__title'>Contact Me</h2>
       <Formik
         initialValues={{

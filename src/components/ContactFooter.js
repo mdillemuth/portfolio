@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 export default function ContactFooter() {
   return (
@@ -8,7 +8,7 @@ export default function ContactFooter() {
         Interested in doing a project together?
       </h2>
       <hr className='contactFooter__hr' />
-      <Link to='/contact'>
+      <Link to='/contact#get-in-touch' smooth>
         <button className='btn btn--secondary about__btn'>
           <span className='btn__span--secondary'>CONTACT ME</span>
         </button>

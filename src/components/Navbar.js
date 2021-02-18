@@ -1,27 +1,35 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navbar() {
   return (
-    <nav className='navbar'>
-      <Link to='/'>
+    <nav id='nav' className='navbar'>
+      <NavLink exact to='/' activeClassName='active'>
         <div className='navbar__logo'></div>
-      </Link>
+      </NavLink>
       <div className='navbar__hamburger'>
         <FontAwesomeIcon className='navbar__hamburger--icon' icon={faBars} />
       </div>
       <ul className='navbar__links__container'>
-        <Link className='navbar__link' to='/'>
+        <NavLink exact to='/' className='navbar__link' activeClassName='active'>
           <li>HOME</li>
-        </Link>
-        <Link className='navbar__link' to='/portfolio'>
+        </NavLink>
+        <NavLink
+          to='/portfolio'
+          className='navbar__link'
+          activeClassName='active'
+        >
           <li>PORTFOLIO</li>
-        </Link>
-        <Link className='navbar__link' to='/contact'>
+        </NavLink>
+        <NavLink
+          to='/contact'
+          className='navbar__link'
+          activeClassName='active'
+        >
           <li>CONTACT ME</li>
-        </Link>
+        </NavLink>
       </ul>
     </nav>
   );
