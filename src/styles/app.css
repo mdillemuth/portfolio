@@ -13,6 +13,7 @@
 @import 'portfolio-card.css';
 @import 'portfolio.css';
 @import 'project-card.css';
+@import 'tooltip.css';
 
 /* React Transition Group Animations */
 @import 'react-transition-group.css';

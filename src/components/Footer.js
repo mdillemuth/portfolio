@@ -27,7 +27,8 @@ export default function Footer() {
           </li>
         </ul>
         <ul className='footer__icons'>
-          <li className='footer__icons__item'>
+          <li className='footer__icons__item tooltip'>
+            <span className='tooltiptext'>GitHub</span>
             <a
               href='https://github.com/mdillemuth'
               rel='noreferrer'
@@ -39,7 +40,8 @@ export default function Footer() {
               />
             </a>
           </li>
-          <li className='footer__icons__item'>
+          <li className='footer__icons__item tooltip'>
+            <span className='tooltiptext'>Gmail</span>
             <a
               href='mailto:mattdillemuth@gmail.com'
               rel='noreferrer'
@@ -51,7 +53,8 @@ export default function Footer() {
               />
             </a>
           </li>
-          <li className='footer__icons__item'>
+          <li className='footer__icons__item tooltip'>
+            <span className='tooltiptext'>LinkedIn</span>
             <a
               href='https://www.linkedin.com/in/mdillemuth/'
               target='_blank'

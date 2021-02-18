@@ -74,7 +74,7 @@
 
 .footer__fontawesome {
   font-size: 24px;
-  transition: all 300ms ease-out;
+  transition: all 200ms ease-out;
 }
 
 .footer__fontawesome:hover {

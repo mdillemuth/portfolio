@@ -26,7 +26,8 @@ export default function GetInTouch() {
             </button>
           </a>{' '}
           <ul className='getInTouch__icons'>
-            <li className='getInTouch__icons__item'>
+            <li className='getInTouch__icons__item tooltip'>
+              <span className='tooltiptext'>GitHub</span>
               <a
                 href='https://github.com/mdillemuth'
                 rel='noreferrer'
@@ -38,7 +39,8 @@ export default function GetInTouch() {
                 />
               </a>
             </li>
-            <li className='getInTouch__icons__item'>
+            <li className='getInTouch__icons__item tooltip'>
+              <span className='tooltiptext'>Gmail</span>
               <a
                 href='mailto:mattdillemuth@gmail.com'
                 rel='noreferrer'
@@ -50,7 +52,8 @@ export default function GetInTouch() {
                 />
               </a>
             </li>
-            <li className='getInTouch__icons__item'>
+            <li className='getInTouch__icons__item tooltip'>
+              <span className='tooltiptext'>LinkedIn</span>
               <a
                 href='https://www.linkedin.com/in/mdillemuth/'
                 target='_blank'
