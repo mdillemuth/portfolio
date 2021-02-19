@@ -7,22 +7,48 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 export default function ProjectCard({ match, projects }) {
+  // Finds the project to render from passed in data
   const project = projects.find(
     (project) => project.projectId === match.params.projectId
   );
 
+  // Determines project to link to in 'previous project' button at bottom
   const findPrevProject = () => {
     const index = project.id;
+    // If already on first project it selects the last project
     return index === 0 ? projects[projects.length - 1] : projects[index - 1];
   };
 
+  // Determines project to link to in 'next project' button at bottom
   const findNextProject = () => {
     const index = project.id;
+    // If already on last project it selects the first project
     return index === projects.length - 1 ? projects[0] : projects[index + 1];
   };
 
+  // Finds the projects to feed to buttons
   const prevProject = findPrevProject();
   const nextProject = findNextProject();
+
+  // EVERY project has a button to link to GitHub code
+  // EVERY project has a button to link to a modal of a project demo
+
+  // Website links are rendered conditionally as some projects do not have a website
+  const renderWebsiteBtn = () => {
+    // Creates a button with a website link if project has a website
+    return project.links.website !== null ? (
+      <a
+        className='btn--projectCard'
+        href={project.links.website}
+        target='_blank'
+        rel='noreferrer'
+      >
+        <button className='btn btn--secondary'>
+          <span className='btn__span--secondary'>VISIT WEBSITE</span>
+        </button>
+      </a>
+    ) : null;
+  };
 
   return (
     <article id='project' className='projectCard__container'>
@@ -47,16 +73,6 @@ export default function ProjectCard({ match, projects }) {
                 {project.categories.secondary}
               </div>
             </div>
-            <a
-              className='btn--projectCard'
-              href={project.links.github}
-              target='_blank'
-              rel='noreferrer'
-            >
-              <button className='btn btn--secondary'>
-                <span className='btn__span--secondary'>VIEW CODE</span>
-              </button>
-            </a>
             {/* <a
               className='btn--projectCard'
               href={project.github}
@@ -67,6 +83,17 @@ export default function ProjectCard({ match, projects }) {
                 <span className='btn__span--secondary'>VIEW DEMO</span>
               </button>
             </a> */}
+            {renderWebsiteBtn()}
+            <a
+              className='btn--projectCard'
+              href={project.links.github}
+              target='_blank'
+              rel='noreferrer'
+            >
+              <button className='btn btn--secondary'>
+                <span className='btn__span--secondary'>VIEW CODE</span>
+              </button>
+            </a>
           </section>
           <hr className='projectCard__hr projectCard__hr--bottom' />
         </div>
