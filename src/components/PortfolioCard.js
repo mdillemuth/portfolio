@@ -2,7 +2,7 @@ import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 
 export default function PortfolioCard(props) {
-  const { id, projectId, title, img1, description } = props;
+  const { id, projectId, title, imgSrc, description } = props;
 
   // The whole card
   const renderCardOrientation = (id) => {
@@ -23,7 +23,7 @@ export default function PortfolioCard(props) {
   return (
     <div className={renderCardOrientation(id)}>
       <div
-        style={{ backgroundImage: `url(${img1})` }}
+        style={{ backgroundImage: `url(${imgSrc.img1})` }}
         className='portfolioCard__img'
       />
       <div className={renderContentOrientation(id)}>

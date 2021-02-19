@@ -1,36 +1,97 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import React, { Component } from 'react';
+import { slide as Menu } from 'react-burger-menu';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 
-export default function Navbar() {
-  return (
-    <nav id='nav' className='navbar'>
-      <NavLink exact to='/' activeClassName='active'>
-        <div className='navbar__logo'></div>
-      </NavLink>
-      <div className='navbar__hamburger'>
-        <FontAwesomeIcon className='navbar__hamburger--icon' icon={faBars} />
-      </div>
-      <ul className='navbar__links__container'>
-        <NavLink exact to='/' className='navbar__link' activeClassName='active'>
-          <li>HOME</li>
+class Navbar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      menuOpen: true,
+    };
+  }
+
+  // This keeps your state in sync with the opening/closing of the menu
+  // via the default means, e.g. clicking the X, pressing the ESC key etc.
+  handleStateChange(state) {
+    this.setState({ menuOpen: state.isOpen });
+  }
+
+  // This can be used to close the menu, e.g. when a user clicks a menu item
+  closeMenu() {
+    this.setState({ menuOpen: true });
+  }
+
+  render() {
+    return (
+      <nav id='nav' className='navbar'>
+        <NavLink exact to='/' activeClassName='active' smooth>
+          <div className='navbar__logo'></div>
         </NavLink>
-        <NavLink
-          to='/portfolio'
-          className='navbar__link'
-          activeClassName='active'
-        >
-          <li>PORTFOLIO</li>
-        </NavLink>
-        <NavLink
-          to='/contact'
-          className='navbar__link'
-          activeClassName='active'
-        >
-          <li>CONTACT ME</li>
-        </NavLink>
-      </ul>
-    </nav>
-  );
+        <div className='nav-mobile'>
+          <Menu
+            isOpen={this.state.menuOpen}
+            onStateChange={(state) => this.handleStateChange(state)}
+          >
+            <NavLink
+              exact
+              id='home'
+              to='/'
+              className='menu-item'
+              activeClassName='active'
+              smooth
+              onClick={() => this.closeMenu()}
+            >
+              HOME
+            </NavLink>
+            <NavLink
+              to='/portfolio'
+              className='menu-item'
+              activeClassName='active'
+              smooth
+              onClick={() => this.closeMenu()}
+            >
+              PORTFOLIO
+            </NavLink>
+            <NavLink
+              to='/contact'
+              className='menu-item'
+              activeClassName='active'
+              smooth
+              onClick={() => this.closeMenu()}
+            >
+              CONTACT
+            </NavLink>
+          </Menu>
+        </div>
+        <div className='nav-desktop'>
+          <ul className='navbar__links__container'>
+            <NavLink
+              exact
+              to='/'
+              className='navbar__link'
+              activeClassName='active'
+            >
+              <li>HOME</li>
+            </NavLink>
+            <NavLink
+              to='/portfolio'
+              className='navbar__link'
+              activeClassName='active'
+            >
+              <li>PORTFOLIO</li>
+            </NavLink>
+            <NavLink
+              to='/contact'
+              className='navbar__link'
+              activeClassName='active'
+            >
+              <li>CONTACT ME</li>
+            </NavLink>
+          </ul>
+        </div>
+      </nav>
+    );
+  }
 }
+
+export default Navbar;

@@ -18,10 +18,6 @@
   cursor: pointer;
 }
 
-.navbar__hamburger--icon {
-  font-size: 24px;
-}
-
 .navbar__link {
   transition: all 300ms ease-in-out;
 }
@@ -52,16 +48,28 @@
 
 .navbar__links__container {
   display: none;
+  text-align: right;
 }
 
 .navbar__link.active {
   color: var(--desaturated-cyan);
 }
 
+.nav-desktop {
+  display: none;
+}
+
 /* Tablet */
 @media all and (min-width: 768px) {
+  .nav-mobile {
+    display: none;
+  }
   .navbar__hamburger {
     display: none;
+  }
+
+  .nav-desktop {
+    display: unset;
   }
 
   .navbar__links__container {
@@ -71,4 +79,78 @@
   .navbar__link:nth-of-type(2) {
     margin: 0 40px;
   }
+}
+
+/* React Burger Menu */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: absolute;
+  width: 24px;
+  height: 14px;
+  right: 32px;
+  top: 42px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: var(--gray-dark-blue);
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: var(--desaturated-cyan);
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #ffffff;
+  font-size: 30px;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  margin-left: 32px;
+  background: var(--gray-dark-blue);
+  padding: 40px;
+  font-size: 16px;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  text-align: right;
+  color: #ffffff;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  margin-bottom: 32px;
+  letter-spacing: 2px;
+}
+
+.bm-item:hover {
+  color: var(--desaturated-cyan);
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  margin-left: 32px;
 }

@@ -28,7 +28,7 @@ export default function ProjectCard({ match, projects }) {
     <article id='project' className='projectCard__container'>
       <img
         className='projectCard__img projectCard__img--overview'
-        src={project.img1}
+        src={project.imgSrc.img1}
         alt='img'
       />
       <div className='projectCard__desktop-container'>
@@ -41,13 +41,32 @@ export default function ProjectCard({ match, projects }) {
             </p>
             <div className='projectCard__categories__container'>
               <div className='projectCard__categories'>
-                Interaction Design / Front End Development
+                {project.categories.primary}
               </div>
-              <div className='projectCard__categories'>HTML / CSS / JS</div>
+              <div className='projectCard__categories'>
+                {project.categories.secondary}
+              </div>
             </div>
-            <button className='btn btn--secondary'>
-              <span className='btn__span--secondary'>VISIT WEBSITE</span>
-            </button>
+            <a
+              className='btn--projectCard'
+              href={project.links.github}
+              target='_blank'
+              rel='noreferrer'
+            >
+              <button className='btn btn--secondary'>
+                <span className='btn__span--secondary'>VIEW CODE</span>
+              </button>
+            </a>
+            {/* <a
+              className='btn--projectCard'
+              href={project.github}
+              target='_blank'
+              rel='noreferrer'
+            >
+              <button className='btn btn--secondary'>
+                <span className='btn__span--secondary'>VIEW DEMO</span>
+              </button>
+            </a> */}
           </section>
           <hr className='projectCard__hr projectCard__hr--bottom' />
         </div>
@@ -58,13 +77,13 @@ export default function ProjectCard({ match, projects }) {
           <p className='projectCard__text--background'>{project.background}</p>
           <h3 className='projectCard__subtitle--preview'>Static Previews</h3>
           <img
-            className='projectCard__img projectCard__img--static--1'
-            src={project.img2}
+            className='projectCard__img projectCard__img--static projectCard__img--static--1'
+            src={project.imgSrc.img2}
             alt='img'
           />
           <img
-            className='projectCard__img projectCard__img--static--2'
-            src={project.img3}
+            className='projectCard__img  projectCard__img--static projectCard__img--static--2'
+            src={project.imgSrc.img3}
             alt='img'
           />
         </section>
