@@ -1,0 +1,59 @@
+.about__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px 1fr;
+}
+
+.about__img {
+  background-image: url('../img/about.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about__hr {
+  margin: 32px 0;
+}
+
+.about__title {
+  margin-bottom: 24px;
+}
+
+.about__text {
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+
+.about__btn {
+  margin-bottom: 18px;
+}
+
+/* Tablet */
+@media all and (min-width: 768px) {
+  .about__container {
+    grid-template-columns: 1.6fr 2fr;
+    grid-column-gap: 70px;
+    grid-template-rows: 600px;
+  }
+
+  .about__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .about__hr {
+    margin: 0;
+  }
+}
+
+/* Desktop */
+@media all and (min-width: 1440px) {
+  .about__container {
+    /* max-width: 1200px; */
+    grid-template-columns: 1fr 450px;
+    grid-column-gap: 125px;
+    grid-template-rows: 600px;
+    grid-column-gap: 70px;
+  }
+}

@@ -1,0 +1,88 @@
+.btn {
+  font-weight: bold;
+  font-style: 12px;
+  letter-spacing: 2px;
+  height: 48px;
+  width: 200px;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  transition: all 300ms ease-out;
+  cursor: pointer;
+}
+
+/* Primary Button */
+.btn--primary {
+  background-color: var(--dark-blue);
+}
+
+.btn--primary:hover {
+  background-color: var(--desaturated-cyan);
+}
+
+/* Primary Button Interactivity */
+.btn .btn__span--primary {
+  color: #ffffff;
+  display: inline-block;
+  position: relative;
+  transition: all 300ms ease-out;
+}
+
+.btn .btn__span--primary:after {
+  content: '\00BB';
+  position: absolute;
+  opacity: 0;
+  bottom: 0px;
+  right: -20px;
+  transition: all 300ms ease-out;
+}
+
+.btn:hover .btn__span--primary {
+  padding-right: 25px;
+}
+
+.btn:hover .btn__span--primary:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Secondary Button */
+.btn--secondary {
+  background-color: transparent;
+  color: var(--gray-dark-blue);
+  border: 1px solid var(--gray-dark-blue);
+}
+
+.btn--secondary:hover {
+  background-color: var(--gray-dark-blue);
+  color: #ffffff;
+  border-color: var(--gray-dark-blue);
+}
+
+/* Secondary Button Interactivity */
+.btn .btn__span--secondary {
+  color: var(--gray-dark-blue);
+  display: inline-block;
+  position: relative;
+  transition: all 300ms ease-out;
+}
+
+.btn .btn__span--secondary:after {
+  color: #ffffff;
+  content: '\00BB';
+  position: absolute;
+  opacity: 0;
+  bottom: 0px;
+  right: -20px;
+  transition: all 300ms ease-out;
+}
+
+.btn:hover .btn__span--secondary {
+  color: white;
+  padding-right: 25px;
+}
+
+.btn:hover .btn__span--secondary:after {
+  opacity: 1;
+  right: 0;
+}

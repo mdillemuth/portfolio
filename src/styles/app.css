@@ -1,0 +1,135 @@
+@import-normalize;
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+@import 'about.css';
+@import 'buttons.css';
+@import 'contact-footer.css';
+@import 'contact-form.css';
+@import 'footer.css';
+@import 'get-in-touch.css';
+@import 'hero.css';
+@import 'navbar.css';
+@import 'portfolio-card.css';
+@import 'portfolio.css';
+@import 'project-card.css';
+@import 'tooltip.css';
+
+/* React Transition Group Animations */
+@import 'react-transition-group.css';
+
+/* Resets */
+:root {
+  --dark-blue: #203a4c;
+  --desaturated-cyan: #5fb4a2;
+  --gray-dark-blue: #33323d;
+  --bg-color-light: #fafafa;
+  --text-field: #eaeaeb;
+  --error-red: #f43030;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Common Styles */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--bg-color-light);
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 350px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div {
+  color: var(--gray-dark-blue);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-family: 'Roboto Slab', serif;
+  line-height: 42px;
+  font-size: 40px;
+  letter-spacing: -0.36px;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: -0.29px;
+  font-weight: normal;
+}
+
+p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+hr {
+  background-color: #979797;
+  height: 1px;
+  border: none;
+}
+
+/* App Container */
+.App {
+  padding: 0 32px;
+}
+
+/* Tablet */
+@media all and (min-width: 768px) {
+  body {
+    padding-bottom: 80px;
+  }
+
+  .App {
+    padding: 0 40px;
+  }
+}
+
+/* Desktop */
+@media all and (min-width: 1440px) {
+  .App {
+    padding: 0 165px;
+    max-width: 1750px;
+    margin: 0 auto;
+  }
+}
