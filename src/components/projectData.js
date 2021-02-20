@@ -16,7 +16,7 @@ export const projectData = [
     links: {
       github: 'https://github.com/mdillemuth/fightFlix-client',
       demo: '',
-      website: null,
+      website: 'https://my-fight-flix.netlify.app/',
       caseStudy: null,
     },
     description:
@@ -42,7 +42,7 @@ export const projectData = [
     links: {
       github: 'https://github.com/mdillemuth/meet-app',
       demo: '',
-      website: null,
+      website: 'https://mdillemuth.github.io/meet-app/',
       caseStudy: null,
     },
     description:
@@ -94,7 +94,7 @@ export const projectData = [
     links: {
       github: 'https://github.com/mdillemuth/pokedex-app',
       demo: '',
-      website: null,
+      website: 'https://mdillemuth.github.io/pokedex-app/',
       caseStudy: null,
     },
     description:

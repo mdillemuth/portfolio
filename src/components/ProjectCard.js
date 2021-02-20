@@ -25,6 +25,24 @@ export default function ProjectCard({ match, projects }) {
     return index === projects.length - 1 ? projects[0] : projects[index + 1];
   };
 
+  // Renders button with link to website for projects that have a website
+  const renderWebsiteBtn = () => {
+    if (project.links.website !== null) {
+      return (
+        <a
+          className='btn--projectCard'
+          href={project.links.website}
+          target='_blank'
+          rel='noreferrer'
+        >
+          <button className='btn btn--secondary'>
+            <span className='btn__span--secondary'>VISIT WEBSITE</span>
+          </button>
+        </a>
+      );
+    }
+  };
+
   const prevProject = findPrevProject();
   const nextProject = findNextProject();
 
@@ -52,6 +70,7 @@ export default function ProjectCard({ match, projects }) {
               </div>
             </div>
             <ProjectCardDemo demo={project.imgSrc.demo} />
+            {renderWebsiteBtn()}
             <a
               className='btn--projectCard'
               href={project.links.github}
