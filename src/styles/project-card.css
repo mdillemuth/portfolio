@@ -115,9 +115,9 @@
   margin-bottom: 24px;
 }
 
-.btn--projectCard:last-of-type {
+/* .btn--projectCard:last-of-type {
   margin-bottom: 0;
-}
+} */
 
 /* Tablet */
 @media all and (min-width: 768px) {

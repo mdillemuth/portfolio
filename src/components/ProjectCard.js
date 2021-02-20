@@ -5,17 +5,21 @@ import {
   faChevronLeft,
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
+import ProjectCardDemo from './ProjectCardDemo';
 
 export default function ProjectCard({ match, projects }) {
+  // Finds the project that is being rendered
   const project = projects.find(
     (project) => project.projectId === match.params.projectId
   );
 
+  // Determines previous project to link to in tabs at bottom
   const findPrevProject = () => {
     const index = project.id;
     return index === 0 ? projects[projects.length - 1] : projects[index - 1];
   };
 
+  // Determines next project to link to in tabs at bottom
   const findNextProject = () => {
     const index = project.id;
     return index === projects.length - 1 ? projects[0] : projects[index + 1];
@@ -47,6 +51,7 @@ export default function ProjectCard({ match, projects }) {
                 {project.categories.secondary}
               </div>
             </div>
+            <ProjectCardDemo demo={project.imgSrc.demo} />
             <a
               className='btn--projectCard'
               href={project.links.github}
@@ -57,16 +62,6 @@ export default function ProjectCard({ match, projects }) {
                 <span className='btn__span--secondary'>VIEW CODE</span>
               </button>
             </a>
-            {/* <a
-              className='btn--projectCard'
-              href={project.github}
-              target='_blank'
-              rel='noreferrer'
-            >
-              <button className='btn btn--secondary'>
-                <span className='btn__span--secondary'>VIEW DEMO</span>
-              </button>
-            </a> */}
           </section>
           <hr className='projectCard__hr projectCard__hr--bottom' />
         </div>

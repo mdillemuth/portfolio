@@ -1,0 +1,22 @@
+.modal__img {
+  width: 300px;
+  max-height: 70vh;
+  height: auto;
+  object-fit: contain;
+}
+
+@media all and (min-width: 768px) {
+  .modal__img {
+    width: 720px;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .modal__img {
+    width: 1100px;
+    height: auto;
+    object-fit: contain;
+  }
+}
