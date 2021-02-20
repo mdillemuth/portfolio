@@ -24,7 +24,7 @@ export default function ContactForm() {
           fetch('/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: encode({ 'form-name': 'contact-form', ...values }),
+            body: encode({ 'form-name': 'contact', ...values }),
           })
             .then(() => {
               alert('Success');
@@ -52,7 +52,7 @@ export default function ContactForm() {
         }}
       >
         {() => (
-          <Form name='contact-form' data-netlify={true}>
+          <Form name='contact' data-netlify={true}>
             <div className='contactForm__group'>
               <label className='contactForm__label' htmlFor='name'>
                 Name
