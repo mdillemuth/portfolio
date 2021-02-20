@@ -2,6 +2,15 @@ import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 
 export default function ContactForm() {
+  // Helper function to encode form for Netlify
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+      )
+      .join('&');
+  };
+
   return (
     <div id='contact' className='contactForm__container'>
       <h2 className='contactForm__title'>Contact Me</h2>
@@ -15,7 +24,7 @@ export default function ContactForm() {
           fetch('/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: encodeURI({ 'form-name': 'contact-form', ...values }),
+            body: encode({ 'form-name': 'contact-form', ...values }),
           })
             .then(() => {
               alert('Success');

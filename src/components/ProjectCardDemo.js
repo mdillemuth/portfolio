@@ -30,7 +30,7 @@ export default function ProjectCardDemo({ demo }) {
         onClick={openModal}
         className='btn btn--secondary btn--projectCard'
       >
-        SHOW DEMO
+        <span className='btn__span--secondary'>SHOW DEMO</span>
       </button>
       <Modal
         isOpen={modalIsOpen}
