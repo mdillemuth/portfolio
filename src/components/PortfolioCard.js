@@ -32,7 +32,7 @@ export default function PortfolioCard(props) {
         <p>{description}</p>
         <HashLink to={`/portfolio/${projectId}#project`}>
           <button className='btn btn--secondary'>
-            <span className='btn__span--secondary'>VIEW PROJECT</span>
+            <span className='btn__span--secondary'>VIEW APP</span>
           </button>
         </HashLink>
         <hr />

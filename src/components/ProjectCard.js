@@ -43,6 +43,24 @@ export default function ProjectCard({ match, projects }) {
     }
   };
 
+  // Renders button with link to case study for projects that have a case study
+  const renderCaseStudyBtn = () => {
+    if (project.links.caseStudy !== null) {
+      return (
+        <a
+          className='btn--projectCard'
+          href={project.links.caseStudy}
+          target='_blank'
+          rel='noreferrer'
+        >
+          <button className='btn btn--secondary'>
+            <span className='btn__span--secondary'>READ CASE STUDY</span>
+          </button>
+        </a>
+      );
+    }
+  };
+
   const prevProject = findPrevProject();
   const nextProject = findNextProject();
 
@@ -71,6 +89,7 @@ export default function ProjectCard({ match, projects }) {
             </div>
             <ProjectCardDemo demo={project.imgSrc.demo} />
             {renderWebsiteBtn()}
+            {renderCaseStudyBtn()}
             <a
               className='btn--projectCard'
               href={project.links.github}
@@ -85,11 +104,9 @@ export default function ProjectCard({ match, projects }) {
           <hr className='projectCard__hr projectCard__hr--bottom' />
         </div>
         <section className='projectCard__section--background'>
-          <h3 className='projectCard__subtitle--background'>
-            Project Background
-          </h3>
+          <h3 className='projectCard__subtitle--background'>Background</h3>
           <p className='projectCard__text--background'>{project.background}</p>
-          <h3 className='projectCard__subtitle--preview'>Static Previews</h3>
+          <h3 className='projectCard__subtitle--preview'>Previews</h3>
           <img
             className='projectCard__img projectCard__img--static projectCard__img--static--1'
             src={project.imgSrc.img2}
@@ -117,7 +134,7 @@ export default function ProjectCard({ match, projects }) {
                   {prevProject.title}
                 </h3>
                 <div className='projectCard__menu__content--left--label'>
-                  Previous Project
+                  Previous App
                 </div>
               </div>
             </HashLink>
@@ -134,7 +151,7 @@ export default function ProjectCard({ match, projects }) {
                   {nextProject.title}
                 </h3>
                 <div className='projectCard__menu__content--right--label'>
-                  Next Project
+                  Next App
                 </div>
               </div>
             </HashLink>

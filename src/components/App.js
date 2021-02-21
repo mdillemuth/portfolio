@@ -12,7 +12,7 @@ import ContactFooter from './ContactFooter';
 import Footer from './Footer';
 import ProjectCard from './ProjectCard';
 // Data
-import { projectData } from './projectData';
+import { projectData } from '../projectData';
 // Transition animations
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
