@@ -27,15 +27,15 @@ export default function PortfolioCard(props) {
         className='portfolioCard__img'
       />
       <div className={renderContentOrientation(id)}>
-        <hr className='portfolioCard__hr' />
-        <h2 className='portfolioCard__title'>{title}</h2>
-        <p className='portfolioCard__text'>{description}</p>
+        <hr />
+        <h2>{title}</h2>
+        <p>{description}</p>
         <HashLink to={`/portfolio/${projectId}#project`}>
-          <button className='btn btn--secondary portfolioCard__btn'>
+          <button className='btn btn--secondary'>
             <span className='btn__span--secondary'>VIEW PROJECT</span>
           </button>
         </HashLink>
-        <hr className='portfolioCard__hr' />
+        <hr />
       </div>
     </div>
   );

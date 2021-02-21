@@ -1,23 +1,25 @@
+// Reset & Font
 @import-normalize;
-
-/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
-@import 'about.css';
-@import 'buttons.css';
-@import 'contact-footer.css';
-@import 'contact-form.css';
-@import 'footer.css';
-@import 'get-in-touch.css';
-@import 'hero.css';
-@import 'navbar.css';
-@import 'portfolio-card.css';
-@import 'portfolio.css';
-@import 'project-card.css';
-@import 'tooltip.css';
-@import 'project-card-demo.css';
 
-/* React Transition Group Animations */
-@import 'react-transition-group.css';
+// Component style sheets
+@import 'about.scss';
+@import 'buttons.scss';
+@import 'contact-footer.scss';
+@import 'contact-form.scss';
+@import 'footer.scss';
+@import 'get-in-touch.scss';
+@import 'hero.scss';
+@import 'navbar.scss';
+@import 'portfolio-card.scss';
+@import 'portfolio.scss';
+@import 'project-card.scss';
+@import 'tooltip.scss';
+@import 'project-card-demo.scss';
+
+// Library-related style sheets
+@import 'react-transition-group.scss';
+@import 'react-burger-menu.scss';
 
 /* Resets */
 :root {

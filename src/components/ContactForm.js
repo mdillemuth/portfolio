@@ -13,7 +13,7 @@ export default function ContactForm() {
 
   return (
     <div id='contact' className='contactForm__container'>
-      <h2 className='contactForm__title'>Contact Me</h2>
+      <h2>Contact Me</h2>
       <Formik
         initialValues={{
           name: '',

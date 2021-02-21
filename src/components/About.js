@@ -6,9 +6,9 @@ export default function About() {
     <div id='about' className='about__container'>
       <div className='about__img'></div>
       <div className='about__content'>
-        <hr className='about__hr' />
-        <h2 className='about__title'> About Me</h2>
-        <p className='about__text'>
+        <hr />
+        <h2>About Me</h2>
+        <p>
           I'm a full-stack developer looking for a new role in an exciting
           company. I focus on using JavaScript related technologies such as
           Node.js, Express.js, and React, but I am always learning new things
@@ -23,7 +23,7 @@ export default function About() {
             <span className='btn__span--secondary'>GO TO PORTFOLIO</span>
           </button>
         </HashLink>
-        <hr className='about__hr' />
+        <hr />
       </div>
     </div>
   );

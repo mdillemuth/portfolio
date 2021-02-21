@@ -7,11 +7,11 @@ import pdf from '../dillemuth-matt-resume.pdf';
 export default function GetInTouch() {
   return (
     <div id='get-in-touch' className='getInTouch__container'>
-      <hr className='getInTouch__hr' />
+      <hr />
       <div className='getInTouch__grid'>
-        <h2 className='getInTouch__title'>Get in Touch</h2>
+        <h2>Get in Touch</h2>
         <div className='getIntouch__content'>
-          <p className='getInTouch__text'>
+          <p>
             If you're looking for a developer for your project I'd love to hear
             from you and see how I could help. Currently, I'm seeking a new
             position as a full-stack JavaScript developer, but I am also
@@ -68,7 +68,7 @@ export default function GetInTouch() {
           </ul>
         </div>
       </div>
-      <hr className='getInTouch__hr' />
+      <hr />
     </div>
   );
 }
