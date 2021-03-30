@@ -10,18 +10,20 @@ export const projectData = [
       demo: '/img/myFightFlix-demo.gif',
     },
     categories: {
-      primary: 'Full-Stack / MERN / Bootstrap',
+      primary: 'Full-Stack / MERN / MEAN',
       secondary: 'Node.js / Express.js / React / Redux',
     },
     links: {
       github: 'https://github.com/mdillemuth/fightFlix-client',
       website: 'https://my-fight-flix.netlify.app/',
+      websiteAlt:
+        'https://mdillemuth.github.io/myFightFlix-angular-client/welcome/',
       caseStudy: 'https://mdillemuth.github.io/myFightFlix-case-study/',
     },
     description:
-      'A full-stack web app that allows users to create an account and create a list of their favorites movies. Developed with the MERN stack (MongoDB, Express.js, React, Node.js) and uses Redux.',
+      'A full-stack web app that allows users to create an account and create a list of their favorites movies. RESTful backend server with Node and Express. Front end clients in React and Angular.',
     background:
-      'myFightFlix is a web app that provides users with access to information about movies, directors, and genres. Users can create an account, update their personal data, and curate a list of their favorite movies. The server is built with Node.js and Express.js and uses a RESTful API. The backend is hosted with Heroku and uses JWT based authentication with the help of passport.js. The frontend is built in React and uses Redux state management.',
+      'myFightFlix is a web app that provides users with access to information about movies, directors, and genres. Users can create an account, update their personal data, and curate a list of their favorite movies. The server is built with Node.js and Express.js and uses a RESTful API. The backend is hosted with Heroku and uses JWT based authentication with the help of passport.js. There are two front end clients, one built in React and another in Angular.',
   },
 
   {

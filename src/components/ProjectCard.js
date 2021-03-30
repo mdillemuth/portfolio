@@ -43,6 +43,26 @@ export default function ProjectCard({ match, projects }) {
     }
   };
 
+  // Renders button with link to alternate website for project with alternate website
+  const renderAltWebsiteBtn = () => {
+    if (project.links.websiteAlt !== null) {
+      return (
+        <a
+          className='btn--projectCard'
+          href={project.links.website}
+          target='_blank'
+          rel='noreferrer'
+        >
+          <button className='btn btn--secondary'>
+            <span className='btn__span--secondary'>
+              VISIT ALTERNATE WEBSITE
+            </span>
+          </button>
+        </a>
+      );
+    }
+  };
+
   // Renders button with link to case study for projects that have a case study
   const renderCaseStudyBtn = () => {
     if (project.links.caseStudy !== null) {
@@ -89,6 +109,7 @@ export default function ProjectCard({ match, projects }) {
             </div>
             <ProjectCardDemo demo={project.imgSrc.demo} />
             {renderWebsiteBtn()}
+            {renderAltWebsiteBtn()}
             {renderCaseStudyBtn()}
             <a
               className='btn--projectCard'
