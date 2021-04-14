@@ -1,3 +1,7 @@
 March 29 2021
 
 - Added myFlix Angular information to projectData and projectCard.js to add a button that takes user to the Angular client for the myFlix application
+
+April 13 2021
+
+- Update Resume

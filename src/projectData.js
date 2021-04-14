@@ -11,7 +11,7 @@ export const projectData = [
     },
     categories: {
       primary: 'Full-Stack / MERN / MEAN',
-      secondary: 'Node.js / Express.js / React / Redux',
+      secondary: 'Node.js / Express.js / React / Angular',
     },
     links: {
       github: 'https://github.com/mdillemuth/fightFlix-client',
@@ -99,4 +99,4 @@ export const projectData = [
     background:
       'A small web application that enables users to search for their favorite pokemon. Data is loaded via the Fetch API from an external API. The app uses a variety of frontend features including modals, accordions, card components, and a contact form with client-side validation. I used a combination of my UI design knowledge as well as Bootstrap to create a simple and elegant design for users.',
   },
-];
+]
