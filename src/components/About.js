@@ -1,5 +1,5 @@
-import React from 'react';
-import { HashLink } from 'react-router-hash-link';
+import React from 'react'
+import { HashLink } from 'react-router-hash-link'
 
 export default function About() {
   return (
@@ -9,14 +9,13 @@ export default function About() {
         <hr />
         <h2>About Me</h2>
         <p>
-          I'm a full-stack developer looking for a new role in an exciting
-          company. I focus on using JavaScript related technologies such as
-          Node.js, Express.js, and React, but I am always learning new things
-          and am happy to adapt to whatever tools are required. I'm based on the
-          Treasure Coast in Southeast Florida, but I am open to working remotely
-          and have experience collaborating remotely. When I'm not behind my
-          computer, I'm likely at the gym exercising or practicing Muay Thai.
-          I'd love for you to check out my work.
+          I am a full-stack JavaScript developer passionate about learning and
+          working with others. I received my education from a project-based web
+          development bootcamp where my work was reviewed by industry
+          professionals. In addition to being interested in working with React
+          and the frontend, I am passionate about helping other students learn
+          web development. Currently, I am developing an e-commerce platform
+          using the MERN stack.
         </p>
         <HashLink to='/portfolio#portfolio' smooth>
           <button className='btn btn--secondary about__btn'>
@@ -26,5 +25,5 @@ export default function About() {
         <hr />
       </div>
     </div>
-  );
+  )
 }
