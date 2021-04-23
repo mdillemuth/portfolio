@@ -21,9 +21,9 @@ export const projectData = [
       caseStudy: 'https://mdillemuth.github.io/myFightFlix-case-study/',
     },
     description:
-      'A full-stack web app that allows users to create an account and create a list of their favorites movies. RESTful backend server with Node and Express. Front end clients in React and Angular.',
+      'An interactive and streamlined web application where users can browse their favorite movies. The RESTful backend built with Node.js and Express.js serves two separate frontend clients, one built with React and Redux, the other with Angular.',
     background:
-      'myFightFlix is a web app that provides users with access to information about movies, directors, and genres. Users can create an account, update their personal data, and curate a list of their favorite movies. The server is built with Node.js and Express.js and uses a RESTful API. The backend is hosted with Heroku and uses JWT based authentication with the help of passport.js. There are two front end clients, one built in React and another in Angular.',
+      'myFightFlix is a web app that provides users with access to information about movies, directors, and genres. Users can create an account, update their personal data, and curate a list of their favorite movies. The server is built with Node.js and Express.js and uses a RESTful API. The backend is hosted with Heroku and uses JWT based authentication with the help of passport.js.',
   },
 
   {
@@ -43,6 +43,7 @@ export const projectData = [
     links: {
       github: 'https://github.com/mdillemuth/meet-app',
       website: 'https://mdillemuth.github.io/meet-app/',
+      websiteAlt: null,
       caseStudy: null,
     },
     description:
@@ -67,6 +68,7 @@ export const projectData = [
     links: {
       github: 'https://github.com/mdillemuth/chat-app',
       website: null,
+      websiteAlt: null,
       caseStudy: null,
     },
     description:
@@ -92,6 +94,7 @@ export const projectData = [
     links: {
       github: 'https://github.com/mdillemuth/pokedex-app',
       website: 'https://mdillemuth.github.io/pokedex-app/',
+      websiteAlt: null,
       caseStudy: null,
     },
     description:
@@ -99,4 +102,29 @@ export const projectData = [
     background:
       'A small web application that enables users to search for their favorite pokemon. Data is loaded via the Fetch API from an external API. The app uses a variety of frontend features including modals, accordions, card components, and a contact form with client-side validation. I used a combination of my UI design knowledge as well as Bootstrap to create a simple and elegant design for users.',
   },
+  // {
+  //   id: 0,
+  //   projectId: 'e-commerce-app',
+  //   title: 'Marketplace',
+  //   imgSrc: {
+  //     img1: '/img/marketplace-1.png',
+  //     img2: '/img/marketplace-2.png',
+  //     img3: '/img/marketplace-3.png',
+  //     demo: '/img/marketplace-demo.gif',
+  //   },
+  //   categories: {
+  //     primary: 'Full Stack / MERN / Redux',
+  //     secondary: 'Bootstrap / E Commerce',
+  //   },
+  //   links: {
+  //     github: 'https://github.com/mdillemuth/e-commerce-mern-app',
+  //     website: 'https://mdillemuth.github.io/e-commerce-mern-app/',
+  //     caseStudy: null,
+  //     websiteAlt: null,
+  //   },
+  //   description:
+  //     'A fully-functional e-commerce platform built from scratch with the MERN stack and Redux. Users are able to browse, add, and simulate purchasing products from a MongoDB database. The app offers admin user priveleges to manage products, order details, and users.',
+  //   background:
+  //     'This is a robust and complete application with a thorough list of features and functionality.',
+  // },
 ]

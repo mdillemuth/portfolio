@@ -1,29 +1,29 @@
-import React from 'react';
-import { HashLink } from 'react-router-hash-link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react'
+import { HashLink } from 'react-router-hash-link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faChevronLeft,
   faChevronRight,
-} from '@fortawesome/free-solid-svg-icons';
-import ProjectCardDemo from './ProjectCardDemo';
+} from '@fortawesome/free-solid-svg-icons'
+import ProjectCardDemo from './ProjectCardDemo'
 
 export default function ProjectCard({ match, projects }) {
   // Finds the project that is being rendered
   const project = projects.find(
     (project) => project.projectId === match.params.projectId
-  );
+  )
 
   // Determines previous project to link to in tabs at bottom
   const findPrevProject = () => {
-    const index = project.id;
-    return index === 0 ? projects[projects.length - 1] : projects[index - 1];
-  };
+    const index = project.id
+    return index === 0 ? projects[projects.length - 1] : projects[index - 1]
+  }
 
   // Determines next project to link to in tabs at bottom
   const findNextProject = () => {
-    const index = project.id;
-    return index === projects.length - 1 ? projects[0] : projects[index + 1];
-  };
+    const index = project.id
+    return index === projects.length - 1 ? projects[0] : projects[index + 1]
+  }
 
   // Renders button with link to website for projects that have a website
   const renderWebsiteBtn = () => {
@@ -39,9 +39,9 @@ export default function ProjectCard({ match, projects }) {
             <span className='btn__span--secondary'>VISIT WEBSITE</span>
           </button>
         </a>
-      );
+      )
     }
-  };
+  }
 
   // Renders button with link to alternate website for project with alternate website
   const renderAltWebsiteBtn = () => {
@@ -49,7 +49,7 @@ export default function ProjectCard({ match, projects }) {
       return (
         <a
           className='btn--projectCard'
-          href={project.links.website}
+          href={project.links.websiteAlt}
           target='_blank'
           rel='noreferrer'
         >
@@ -59,9 +59,9 @@ export default function ProjectCard({ match, projects }) {
             </span>
           </button>
         </a>
-      );
+      )
     }
-  };
+  }
 
   // Renders button with link to case study for projects that have a case study
   const renderCaseStudyBtn = () => {
@@ -77,12 +77,12 @@ export default function ProjectCard({ match, projects }) {
             <span className='btn__span--secondary'>READ CASE STUDY</span>
           </button>
         </a>
-      );
+      )
     }
-  };
+  }
 
-  const prevProject = findPrevProject();
-  const nextProject = findNextProject();
+  const prevProject = findPrevProject()
+  const nextProject = findNextProject()
 
   return (
     <article id='project' className='projectCard__container'>
@@ -155,7 +155,7 @@ export default function ProjectCard({ match, projects }) {
                   {prevProject.title}
                 </h3>
                 <div className='projectCard__menu__content--left--label'>
-                  Previous App
+                  Previous
                 </div>
               </div>
             </HashLink>
@@ -172,7 +172,7 @@ export default function ProjectCard({ match, projects }) {
                   {nextProject.title}
                 </h3>
                 <div className='projectCard__menu__content--right--label'>
-                  Next App
+                  Next
                 </div>
               </div>
             </HashLink>
@@ -180,5 +180,5 @@ export default function ProjectCard({ match, projects }) {
         </div>
       </section>
     </article>
-  );
+  )
 }

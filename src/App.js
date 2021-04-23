@@ -1,20 +1,20 @@
-import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import React from 'react'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 // Components
-import Navbar from './Navbar';
-import Hero from './Hero';
-import About from './About';
-import Portfolio from './Portfolio';
-import GetInTouch from './GetInTouch';
-import ContactForm from './ContactForm';
-import ContactFooter from './ContactFooter';
-import Footer from './Footer';
-import ProjectCard from './ProjectCard';
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import About from './components/About'
+import Portfolio from './components/Portfolio'
+import GetInTouch from './components/GetInTouch'
+import ContactForm from './components/ContactForm'
+import ContactFooter from './components/ContactFooter'
+import Footer from './components/Footer'
+import ProjectCard from './components/ProjectCard'
 // Data
-import { projectData } from '../projectData';
+import { projectData } from './projectData'
 // Transition animations
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 // Components
 
@@ -25,7 +25,7 @@ export default function App() {
         <Navbar />
         <Route
           render={({ location }) => {
-            const { key } = location;
+            const { key } = location
             return (
               <TransitionGroup>
                 <CSSTransition key={key} timeout={500} classNames='fade'>
@@ -40,7 +40,7 @@ export default function App() {
                             <About />
                             <ContactFooter />
                           </div>
-                        );
+                        )
                       }}
                     />
                     <Route
@@ -51,7 +51,7 @@ export default function App() {
                             <ProjectCard {...props} projects={projectData} />
                             <ContactFooter />
                           </div>
-                        );
+                        )
                       }}
                     />
                     <Route
@@ -62,7 +62,7 @@ export default function App() {
                             <Portfolio projects={projectData} />
                             <ContactFooter />
                           </div>
-                        );
+                        )
                       }}
                     />
                     <Route
@@ -73,17 +73,17 @@ export default function App() {
                             <GetInTouch />
                             <ContactForm />
                           </div>
-                        );
+                        )
                       }}
                     />
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>
-            );
+            )
           }}
         />
         <Footer />
       </div>
     </BrowserRouter>
-  );
+  )
 }
