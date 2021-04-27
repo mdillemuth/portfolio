@@ -65,32 +65,18 @@ class Navbar extends Component {
         </div>
         <div className='nav-desktop'>
           <ul className='navbar__links__container'>
-            <li>
-              <NavLink
-                exact
-                to='/'
-                className='navbar__link'
-                activeClassName='active'
-              >
+            <li className='navbar__link'>
+              <NavLink exact to='/' activeClassName='active'>
                 HOME
               </NavLink>
             </li>
-
-            <li>
-              <NavLink
-                to='/portfolio'
-                className='navbar__link'
-                activeClassName='active'
-              >
+            <li className='navbar__link'>
+              <NavLink to='/portfolio' activeClassName='active'>
                 PORTFOLIO
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to='/contact'
-                className='navbar__link'
-                activeClassName='active'
-              >
+            <li className='navbar__link'>
+              <NavLink to='/contact' activeClassName='active'>
                 CONTACT ME
               </NavLink>
             </li>

@@ -22,11 +22,11 @@
   transition: all 300ms ease-in-out;
 }
 
-.navbar__link li {
-  letter-spacing: 2px;
+.navbar__link {
+  letter-spacing: 1px;
 }
 
-.navbar__link li:after {
+.navbar__link:after {
   content: '';
   display: block;
   margin: auto;
@@ -37,7 +37,7 @@
   transition: width 300ms ease-out, background-color 300ms ease-out;
 }
 
-.navbar__link li:hover:after {
+.navbar__link:hover:after {
   width: 100%;
   background: var(--desaturated-cyan);
 }
