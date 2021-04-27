@@ -38,32 +38,8 @@
   transition: all 300ms ease-out;
 }
 
-.footer__nav__item:after {
-  content: '';
-  display: block;
-  margin: auto;
-  margin-top: 5px;
-  height: 1px;
-  width: 0px;
-  background: transparent;
-  transition: width 300ms ease-out, background-color 300ms ease-out;
-}
-
-.footer__nav__item:hover:after {
-  width: 100%;
-  background: var(--desaturated-cyan);
-}
-
 .footer__nav__item:nth-of-type(3) {
   margin: 32px 0;
-}
-
-.footer__nav__item:hover {
-  color: var(--desaturated-cyan);
-}
-
-.footer__nav__item .active {
-  color: var(--desaturated-cyan);
 }
 
 /* Nav Icons */

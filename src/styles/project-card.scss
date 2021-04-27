@@ -33,10 +33,10 @@
 }
 
 .projectCard__categories {
-  color: #5fb4a2;
+  color: var(--desaturated-cyan);
   font-weight: bold;
   line-height: 30px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .projectCard__hr {
@@ -87,8 +87,11 @@
 .projectCard__menu__content--left--label,
 .projectCard__menu__content--right--label {
   font-size: 16px;
-  opacity: 0.5;
   line-height: 30px;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: bold;
 }
 
 .projectCard__menu__content--middle {
@@ -103,11 +106,6 @@
 
 .projectCard__menu__content--right--title,
 .projectCard__menu__content--left--title {
-  transition: all 300ms;
-}
-
-.projectCard__menu__content--right--title:hover,
-.projectCard__menu__content--left--title:hover {
   color: var(--desaturated-cyan);
 }
 
@@ -115,6 +113,7 @@
   margin-bottom: 24px;
 }
 
+// not sure what this is from?
 /* .btn--projectCard:last-of-type {
   margin-bottom: 0;
 } */

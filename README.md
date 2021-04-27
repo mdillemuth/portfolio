@@ -13,11 +13,11 @@ The site hosts personal information and a thorough showcase of my personal proje
 ## Technologies
 
 - React
-- HTML
-- CSS
-- JavaScript
+- SCSS
+  - Modularized, each react component has its own scss
+  - BEM naming convention for consistency
 - Figma
-- Netlify
+  - Pixel perfect implementation from mockups
 
 ## Key Features
 
@@ -26,6 +26,7 @@ The site hosts personal information and a thorough showcase of my personal proje
 - Dynamically rendered components for the portfolio projects
 - Contact form with client-side validation implemented with _Formik_ and _Netlify_
 - Clean and elegant design
+- Accessibility rating of 90+ with Google's _Lighthouse_ dev tools
 
 ## Style Implementation
 
