@@ -1,24 +1,24 @@
-import React, { Component } from 'react';
-import { slide as Menu } from 'react-burger-menu';
-import { NavHashLink as NavLink } from 'react-router-hash-link';
+import React, { Component } from 'react'
+import { slide as Menu } from 'react-burger-menu'
+import { NavHashLink as NavLink } from 'react-router-hash-link'
 
 class Navbar extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       menuOpen: true,
-    };
+    }
   }
 
   // This keeps your state in sync with the opening/closing of the menu
   // via the default means, e.g. clicking the X, pressing the ESC key etc.
   handleStateChange(state) {
-    this.setState({ menuOpen: state.isOpen });
+    this.setState({ menuOpen: state.isOpen })
   }
 
   // This can be used to close the menu, e.g. when a user clicks a menu item
   closeMenu() {
-    this.setState({ menuOpen: true });
+    this.setState({ menuOpen: true })
   }
 
   render() {
@@ -65,33 +65,40 @@ class Navbar extends Component {
         </div>
         <div className='nav-desktop'>
           <ul className='navbar__links__container'>
-            <NavLink
-              exact
-              to='/'
-              className='navbar__link'
-              activeClassName='active'
-            >
-              <li>HOME</li>
-            </NavLink>
-            <NavLink
-              to='/portfolio'
-              className='navbar__link'
-              activeClassName='active'
-            >
-              <li>PORTFOLIO</li>
-            </NavLink>
-            <NavLink
-              to='/contact'
-              className='navbar__link'
-              activeClassName='active'
-            >
-              <li>CONTACT ME</li>
-            </NavLink>
+            <li>
+              <NavLink
+                exact
+                to='/'
+                className='navbar__link'
+                activeClassName='active'
+              >
+                HOME
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink
+                to='/portfolio'
+                className='navbar__link'
+                activeClassName='active'
+              >
+                PORTFOLIO
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to='/contact'
+                className='navbar__link'
+                activeClassName='active'
+              >
+                CONTACT ME
+              </NavLink>
+            </li>
           </ul>
         </div>
       </nav>
-    );
+    )
   }
 }
 
-export default Navbar;
+export default Navbar
